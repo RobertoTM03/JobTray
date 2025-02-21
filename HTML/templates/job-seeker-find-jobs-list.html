@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find jobs list</title>
+    <link rel="stylesheet" href="../../CSS/job-seeker-list-styles.css">
+</head>
+<body>
+
+<section class="navigation-bar">
+    <label for="search-bar"></label><input type="text" placeholder="Search for jobs..." id="search-bar">
+    <button id="search-btn">Search</button>
+</section>
+
+<main>
+    <aside>
+        <fieldset>
+            <legend>Salary Range</legend>
+            <label for="salary-1"><input type="checkbox" name="salary-range" id="salary-1" checked> $700 - $1000 (4)</label>
+            <label for="salary-2"><input type="checkbox" name="salary-range" id="salary-2" checked> $1000 - $1500 (6)</label>
+            <label for="salary-3"><input type="checkbox" name="salary-range" id="salary-3" checked> $1500 - $2000 (10)</label>
+            <label for="salary-4"><input type="checkbox" name="salary-range" id="salary-4" checked> $3000 or above (4)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sector</legend>
+            <label for="sector-1"><input type="checkbox" name="sector" id="sector-1" checked> Primary</label>
+            <label for="sector-2"><input type="checkbox" name="sector" id="sector-2" checked> Secondary</label>
+            <label for="sector-3"><input type="checkbox" name="sector" id="sector-3" checked> Third</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education-1"><input type="checkbox" name="education" id="education-1" checked> ESO</label>
+            <label for="education-2"><input type="checkbox" name="education" id="education-2" checked> Bachillerato</label>
+            <label for="education-3"><input type="checkbox" name="education" id="education-3" checked> Grado</label>
+            <label for="education-4"><input type="checkbox" name="education" id="education-4" checked> Master</label>
+        </fieldset>
+    </aside>
+
+
+    <section class="job-list">
+        <h2>All Jobs</h2>
+
+        <div class="job-card">
+            <div class="logo"><img src="../../images/asps.png" alt="Placeholder X"></div>
+            <div class="job-info">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="logo"><img src="../../images/asps.png" alt="Placeholder X"></div>
+            <div class="job-info">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="logo"><img src="../../images/asps.png" alt="Placeholder X"></div>
+            <div class="job-info">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="see-more-button">
+            <button id="see-more">See more...</button>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
