@@ -1,0 +1,30 @@
+
+#img {
+    border-radius: 75%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border:white;
+    object-fit: cover;
+
+}
+
+.company-buttons-container{
+    display: flex inline;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px;
+    gap:10px;
+}
+
+.company-buttons{
+    color:#1d4f9a;
+    background-color: white;
+    border-style: none;
+    height:40px;
+    width: 80px;
+}
+
+.company-buttons-profile{
+    text-align:left;background-color: #1d4f9a;border-style: none;color:gray;
+}

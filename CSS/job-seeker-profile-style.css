@@ -1,0 +1,20 @@
+.job-seeker-buttons-section{
+    display: flex inline;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top:20px;
+    gap:10px;
+}
+.job-seeker-find-jobs-button{
+    color:#1d4f9a;
+    background-color: white;
+    border-style: none;
+    height:40px;
+    width: 80px;
+}
+.job-seeker-profile-button{
+    text-align:left;
+    background-color: #1d4f9a;
+    border-style: none;
+    color:gray;
+}

@@ -1,0 +1,81 @@
+
+
+.name-page{
+    color:#25324B;
+    border-style: none;
+}
+
+.dashboard{
+    border-style:solid;
+    border-color:#E6E6E6;
+    display: flex;
+    justify-content:center;
+    gap:1200px;
+}
+.user-information{
+    display: flex;
+    justify-content:flex-start;
+    gap:20px;
+}
+
+.user-image{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    margin-top:10px;
+    margin-left: 10px;
+}
+.button-save{
+    border-color:#E6E6E6;
+    color:#3360A4;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.article-edition{
+    display:flex;justify-content: flex-start;gap:150px
+}
+
+.contact-method{
+    border-style:none;
+}
+.contact-information{
+    border-style: none;
+    height:400px;
+}
+.portfolio{
+    padding-right: 50%;
+    padding-bottom: 10%;
+    border-style:none;
+}
+.text-user{
+    overflow: hidden;
+    resize:none;
+    border-style: none;
+
+}
+
+.job-seeker-buttons-section{
+    display: flex inline;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top:20px;
+    gap:10px;
+}
+.job-seeker-find-jobs-button{
+    color:#1d4f9a;
+    background-color: white;
+    border-style: none;
+    height:40px;
+    width: 80px;
+}
+.job-seeker-profile-button{
+    text-align:left;
+    background-color: #1d4f9a;
+    border-style: none;
+    color:gray;
+}

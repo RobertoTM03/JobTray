@@ -1,0 +1,16 @@
+
+
+.buttons-main-page-section{
+    display: flex inline;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px;
+    gap:10px
+}
+.buttons-main-page{
+    color:#1d4f9a;
+    background-color: white;
+    border-style: none;
+    height:40px;
+    width: 80px;
+}
