@@ -1,0 +1,32 @@
+#company-header{
+    display:flex;
+    border-style:none;
+    background-color: #1d4f9a;
+    width:100%;
+    justify-content: center;
+    gap:854px;
+
+
+}
+#job-seeker-header{
+    display:flex;
+    border-style:none;
+    background-color: #1d4f9a;
+    width:100%;
+    justify-content: center;
+    gap:854px;
+}
+
+#login-and-signup-header{
+    background-color: #1d4f9a;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+}
+#main-header{
+    background-color: #1d4f9a;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:990px;
+}
