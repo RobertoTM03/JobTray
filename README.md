@@ -1,12 +1,12 @@
 # JobTray
 Roberto Tejero Martín, Alejandra Santana López, Sean Owens Cruz.
 
-#Descripción del Proyecto
+# Descripción del Proyecto
 
 JobTray es una applicación web diseñada para la oferta y demanda de trabajo. Permite a los usuarios explorar, postularse y administrar aplicaciones de empleo de manera eficiente. "Encontrar trabajo, en bandeja."
 
 
-#Listado de Requisitos Funcionales
+# Listado de Requisitos Funcionales
 
 -Registro e inicio de sesión de usuarios.
 
@@ -23,13 +23,13 @@ JobTray es una applicación web diseñada para la oferta y demanda de trabajo. P
 
 -Diseño responsivo para dispositivos móviles. (?)
 
-#Nombre y Ubicación del Archivo PDF con los Mockups
+# Nombre y Ubicación del Archivo PDF con los Mockups
 
 Nombre del archivo: 
 
 Ubicación: 
 
-#Listado de Archivos Templates e Identificación de Dónde se Cargan
+# Listado de Archivos Templates e Identificación de Dónde se Cargan
 
 ///// Cambia todo esto!! \\\\\\\\
 
