@@ -1,0 +1,61 @@
+/*
+Enter WP Design & Creation Comments Here
+
+*/
+
+/*////////// GENERAL //////////*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    text-align: left;
+}
+
+
+
+
+/*////////// TYPEOGRAPHY //////////*/
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #001338;
+}
+
+
+p {
+    color: #515B6f;
+}
+
+
+/*////////// CONTENT //////////*/
+#content {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 80%;
+    height: 355px;
+    margin: 30px auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    ;
+
+}
+/*///////// SECTION //////////*/
+#top {
+    width: 80%;
+    margin: 20px auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+}
