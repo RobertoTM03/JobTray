@@ -3,9 +3,9 @@
     border-style:none;
     background-color: #1d4f9a;
     width:100%;
-    justify-content: center;
-    gap:854px;
-
+    justify-content: space-between;
+    margin:0;
+    flex-wrap:wrap;
 
 }
 #job-seeker-header{
@@ -13,8 +13,9 @@
     border-style:none;
     background-color: #1d4f9a;
     width:100%;
-    justify-content: center;
-    gap:854px;
+    justify-content: space-between;
+    margin:0;
+    flex-wrap:wrap;
 }
 
 #login-and-signup-header{
@@ -22,11 +23,15 @@
     width:100%;
     display: flex;
     justify-content: flex-start;
+
+
 }
 #main-header{
+    display:flex;
+    border-style:none;
     background-color: #1d4f9a;
     width:100%;
-    display:flex;
-    justify-content: center;
-    gap:990px;
+    justify-content: space-between;
+    margin:0;
+    flex-wrap:wrap;
 }
