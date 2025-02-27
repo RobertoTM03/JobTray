@@ -3,6 +3,15 @@
     border-style: none;
 }
 
+.user-dashboard{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border:1px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .dashboard{
     border-style:solid;
     border-color:#E6E6E6;
@@ -25,7 +34,24 @@
     justify-content:flex-start;
     gap:20px;
 }
+.user-image-dashboard{
+    display:flex inline;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.imageVacantProfile{
+    width: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+    border-style: solid;
+    margin-left:10px;
+}
 
+#about-me{
+    display: flex ;
+    margin-left: 50px;
+}
 .user-image{
     border-radius: 100%;
     width: 80px;
@@ -33,6 +59,16 @@
     background-color: black;
     margin-top:10px;
     margin-left: 10px;
+    border: 1px solid black;
+}
+.user-image-vacant{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-top:10px;
+    margin-left: 10px;
+    border: 1px solid black;
 }
 .button-save{
     border-color:#E6E6E6;
@@ -51,11 +87,7 @@
 .contact-method{
     border-style:none;
 }
-.contact-information{
-    border-style: none;
-    height:400px;
-    width:10px;
-}
+
 
 .info-job{
     display:flex;
@@ -75,21 +107,10 @@
 
 }
 
-.job-seeker-buttons-section{
-    display: flex inline;
-    justify-content: space-around;
-    align-items: flex-end;
 
 
-}
-.job-seeker-find-jobs-button{
-    color:#1d4f9a;
-    background-color: white;
-    border-style: none;
-    height:40px;
-    width: 80px;
 
-}
+
 .job-seeker-profile-button{
     text-align:left;
     background-color: #1d4f9a;
@@ -98,13 +119,6 @@
 
 }
 
-.imageVacantProfile{
-    width: 30px;
-    border-radius: 100%;
-    object-fit: cover;
-    border-style: solid;
-    margin-left:10px;
-}
 .dashboardNew{
     display:flex; justify-content:space-between;width:50%;margin:0;flex-wrap:wrap; border-style:solid;
     border-color:#E6E6E6;
@@ -115,4 +129,28 @@
 .ApplyNowVacant{
     background-color: white;color:#1d4f9a;border-color:#CCCCF5;width: 100px;height: 35px;border-radius: 4px;
     margin-top: 10px;margin-right: 10px;text-align: right;
+}
+.dashboard-profile{
+    display: flex block; justify-content: center;
+}
+.edit-zone{
+    display: flex ; justify-content: space-between;
+}
+.text-area{
+    display:flex inline; margin-left: 50px;
+}
+.contact-information{
+    display: flex inline;flex-direction:column;margin-right: 50px;gap:5px;
+}
+.apply-job {
+    display: flex inline;flex-direction:column;gap: 10px;margin-right: 50px;
+}
+.section-apply-job {
+    display: flex;justify-content: space-between;align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.margin-zero{
+    margin: 0;
 }

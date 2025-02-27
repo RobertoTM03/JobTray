@@ -35,3 +35,111 @@
     margin:0;
     flex-wrap:wrap;
 }
+#imgCompany {
+    border-radius: 75%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border:white;
+    object-fit: cover;
+
+}
+
+.company-buttons-container{
+    display: flex inline;
+    justify-content: space-around;
+    margin-top:20px;
+    gap:20px;
+}
+
+.company-buttons{
+    color:#1d4f9a;
+    background-color: white;
+    border-style: none;
+    height: 40px;
+    width:  100px;
+    border-radius:4px;
+    text-align:center;
+}
+
+.company-buttons-profile{
+    text-align:left;
+    background-color: #1d4f9a;
+    border-style: none;
+    color:gray;
+    margin-right:20px;
+}
+.job-seeker-buttons-section{
+    display: flex inline;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top:20px;
+    gap:5px;
+
+}
+.job-seeker-find-jobs-button {
+    color: #1d4f9a;
+    background-color: white;
+    border-style: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+
+.job-seeker-profile-button{
+    text-align:left;
+    background-color: #1d4f9a;
+    border-style: none;
+    color:gray;
+
+}
+#imgJobSeeker {
+    border-radius: 75%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: white;
+    object-fit: cover;
+
+}
+
+.buttons-main-page-section{
+    display: flex inline;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px;
+    gap:20px;
+    margin-right:20px;
+}
+.buttons-main-page{
+    color:#1d4f9a;
+    background-color: white;
+    border-style: none;
+    height:40px;
+    width: 100px;
+    border-radius:4px;
+}
+.display-section{
+    display: inline;
+}
+.login-section{
+    background-color: white;
+    border-color: white;
+    width: 200px;
+    height:40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.buttons-section-header {
+    display: flex inline;gap:5px;
+}
+.color-name{
+    color:white;
+}
+.section-button-job-seeker-button{
+    display: flex inline;gap:1px;margin-right: 20px;margin-bottom: 20px;
+}
