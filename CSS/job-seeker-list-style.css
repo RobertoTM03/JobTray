@@ -1,65 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Ebrima, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-}
-
-.navigation-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: white;
-    border-bottom: 1px solid #aaabaf;
-}
-
-#search-bar {
-    flex: 0.95;
-    padding: 10px;
-    border: none;
-    font-size: 16px;
-    border-bottom: 1px solid #aaabaf;
-}
-
-#search-btn {
-    background-color: #1D4F9A;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-main {
+.list-container {
     display: flex;
     margin: 20px;
     gap: 20px;
+    height: 70%;
+    min-height: 80vh;
 }
 
-aside {
-    width: 25%;
+.filter-aside {
+    width: 20vw;
     padding: 20px;
 }
 
-fieldset {
+.filter-aside fieldset {
     border: none;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
-legend {
+.filter-aside legend {
     font-size: 18px;
     font-weight: bold;
     color: #000000;
 }
 
-label {
+.filter-aside label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -67,7 +32,7 @@ label {
     cursor: pointer;
 }
 
-input[type="checkbox"] {
+.filter-aside input[type="checkbox"] {
     margin-right: 8px;
     accent-color: #1D4F9A;
     transform: scale(1.2);
@@ -85,7 +50,7 @@ input[type="checkbox"] {
 .job-card {
     display: flex;
     align-items: center;
-    background: white;
+    background: #f5f5f5;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;

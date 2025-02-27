@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="This is the sign-in main content">
-  <title>Sign-in Page</title>
-  <link rel="stylesheet" href="../../CSS/sign-form-style.css">
-</head>
-<body>
-<main class="container">
-  <nav class="toggle-nav">
-    <a href="job-seeker-sign-up.html" class="toggle-button">Job Seeker</a>
-    <a href="" class="toggle-button active">Company</a>
+<main class="sign-page-container">
+  <nav class="sign-toggle-nav">
+    <a href="../views/sign-up-job-seeker.html" class="sign-toggle-button">Job Seeker</a>
+    <a href="" class="sign-toggle-button active">Company</a>
   </nav>
 
   <section class="sign-box">
@@ -18,7 +9,7 @@
       <h1>Expand your company!</h1>
     </div>
 
-    <article>
+    <section class="sign-entry-form">
       <form>
         <label for="name">Company name</label>
         <input type="text" id="name" placeholder="Enter your company name" required>
@@ -34,12 +25,10 @@
 
         <button type="submit" class="submit-button">Login</button>
       </form>
-    </article>
+    </section>
 
     <div class="bottom-text">
-      <p>Already have an account? <a href="company-sign-in.html">Login</a></p>
+      <p>Already have an account? <a href="../views/sign-in-company.html">Login</a></p>
     </div>
   </section>
 </main>
-</body>
-</html>

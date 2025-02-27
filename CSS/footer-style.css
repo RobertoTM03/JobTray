@@ -1,14 +1,5 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: whitesmoke;
-    text-align: left;
-}
-
-
-p {
+footer p {
     color: white;
-
 }
 
 .info-text{
@@ -40,11 +31,11 @@ p {
     text-align: left;
 
 }
+
 #footer-container2 {
     width: 20%;
     height: 80%;
     padding-right: 30px;
     padding-left: 10px;
     text-align: left;
-
 }

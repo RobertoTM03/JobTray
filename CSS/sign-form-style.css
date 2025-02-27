@@ -1,26 +1,24 @@
-body {
-    font-family: Ebrima, sans-serif;
-    background-color: White;
+.sign-page-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding-top: 125px;
+    min-height: 80vh;
+    width: 100%;
 }
 
-main {
-    padding: 40px;
+.sign-box {
     text-align: center;
-    width: 420px;
+    width: 45vh;
 }
 
-.toggle-nav {
+.sign-toggle-nav {
     display: inline-flex;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.toggle-button {
+.sign-toggle-button {
     padding: 10px 20px;
     background: White;
     color: #3360A4;
@@ -28,31 +26,31 @@ main {
     text-decoration: none;
 }
 
-.toggle-button.active {
+.sign-toggle-button.active {
     background: #E9EBFD;
     font-weight: bold;
 }
 
-h1 {
+.title-text h1 {
     color: #333;
     margin-bottom: 20px;
     font: bold 54px Georgia;
 }
 
-form {
+.sign-entry-form form {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-label {
+.sign-entry-form label {
     color: #757474;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 18px;
 }
 
-input {
+.sign-entry-form input {
     padding: 15px;
     font-size: 18px;
     border: 1px solid #ccc;
