@@ -1,0 +1,24 @@
+.vacancy-tab-nav {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.vacancy-tab {
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+.vacancy-tab a {
+    text-decoration: none;
+    color: #666;
+    font-weight: normal;
+}
+
+.vacancy-tab.active a {
+    font-weight: bold;
+    color: black;
+    border-bottom: 3px solid blue;
+}
