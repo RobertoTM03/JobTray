@@ -14,13 +14,11 @@ footer p {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
     align-items: center;
-    ;
 }
 
 #footer-container {

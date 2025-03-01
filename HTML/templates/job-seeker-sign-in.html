@@ -1,7 +1,7 @@
 <main class="sign-page-container">
   <nav class="sign-toggle-nav">
     <a href="#" class="sign-toggle-button active">Job Seeker</a>
-    <a href="../views/sign-in-company.html" class="sign-toggle-button">Company</a>
+    <a href="#" onclick="redirectToCompanySignIn(event, this)" class="sign-toggle-button">Company</a>
   </nav>
 
   <section class="sign-box">
@@ -17,12 +17,12 @@
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Enter password" required>
 
-        <button type="submit" class="submit-button">Login</button>
+        <button type="submit" class="submit-button" onclick="redirectToFindJobsJobSeeker(event, this)">Login</button>
       </form>
     </section>
 
     <div class="bottom-text">
-      <p>Don’t have an account? <a href="../views/sign-up-job-seeker.html">Sign Up</a></p>
+      <p>Don’t have an account? <a href="#" onclick="redirectToJobSeekerSignUp(event, this)">Sign Up</a></p>
     </div>
   </section>
 </main>

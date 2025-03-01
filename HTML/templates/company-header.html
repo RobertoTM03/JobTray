@@ -1,18 +1,23 @@
 <header id="company-header">
     <section class="display-section">
-        <section  class="display-section">
-            <img src="/images/asps.png" class="login-section">
+        <section class="display-section">
+            <img src="/images/asps.png" class="login-section" alt="Company Logo">
         </section>
     </section>
     <section class="display-section">
-        <section  class="company-buttons-container">
-            <button class="company-buttons">Job Listing</button>
-            <button class="company-buttons">Post a job</button>
+        <section class="company-buttons-container">
+            <button class="company-buttons" onclick="redirectToJobListingCompany(event, this)">Job Listing</button>
+            <button class="company-buttons" onclick="redirectToVacancyPostCompany(event, this)">Post a job</button>
+
             <section class="buttons-section-header">
-                <img id="imgCompany"><button class="company-buttons-profile">
-                <b  class="color-name">Name</b>
-                <br>email@example.com</button>
-                </img>
+                <img src="/images/asps.png" id="imgCompany" alt="Company Profile">
+                <button class="company-buttons-profile">
+                    <b class="color-name">Company Name</b><br>company@example.com
+                </button>
+
+                <div class="popup-menu">
+                    <button class="popup-btn logout" onclick="redirectToMainPage(event, this)">Cerrar sesión</button>
+                </div>
             </section>
         </section>
     </section>

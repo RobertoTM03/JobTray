@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Employment web site">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Employment web site">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript">
 
-    <title>Sign page</title>
-    <script src="/JS/xlu-include-file.js"></script>
-    <link rel="stylesheet" href="/CSS/general-style.css">
-    <link rel="stylesheet" href="/CSS/headers.css">
-    <link rel="stylesheet" href="/CSS/job-seeker-list-style.css">
-    <link rel="stylesheet" href="/CSS/search-bar-style.css">
-    <link rel="stylesheet" href="/CSS/footer-style.css">
-    <link rel="stylesheet" href="/CSS/profiles-style.css">
-</head>
-<body>
-    <div id="wrapper">
-        <header id="sign_header" xlu-include-file="/HTML/templates/job-seeker-header.html">
-        </header>
+        <title>JobTray</title>
+        <script src="/JS/xlu-include-file.js"></script>
 
-        <section id="main-tittle" xlu-include-file="/HTML/templates/main-tittle.html">
-        </section>
+        <link rel="stylesheet" href="/CSS/general-style.css">
+        <link rel="stylesheet" href="/CSS/headers.css">
+        <link rel="stylesheet" href="/CSS/profiles-style.css">
+        <link rel="stylesheet" href="/CSS/footer-style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="sign_header" xlu-include-file="/HTML/templates/job-seeker-header.html">
+            </header>
 
-        <main id="job-listing-content" xlu-include-file="/HTML/templates/profile.html">
-        </main>
+            <section id="main-tittle" xlu-include-file="/HTML/templates/main-tittle.html">
+            </section>
 
-        <footer id="footer" xlu-include-file="/HTML/templates/footer.html">
-        </footer>
-    </div>
-    <script>
-        xLuIncludeFile();
-    </script>
-</body>
+            <main id="job-listing-content" xlu-include-file="/HTML/templates/job-seeker-profile-edit.html">
+            </main>
+
+            <footer id="footer" xlu-include-file="/HTML/templates/footer.html">
+            </footer>
+        </div>
+        <script>
+            xLuIncludeFile();
+        </script>
+    </body>
 </html>

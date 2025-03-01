@@ -18,8 +18,8 @@
             </div>
             <div class="input-container">
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="employment_type" value="full-time"> Full-Time</label>
-                    <label><input type="checkbox" name="employment_type" value="part-time"> Part-Time</label>
+                    <label><input type="radio" name="employment_type" value="full-time"> Full-Time</label>
+                    <label><input type="radio" name="employment_type" value="part-time"> Part-Time</label>
                     <label><input type="checkbox" name="employment_type" value="remote"> Remote</label>
                     <label><input type="checkbox" name="employment_type" value="internship"> Internship</label>
                     <label><input type="checkbox" name="employment_type" value="contract"> Contract</label>
@@ -35,10 +35,10 @@
             <div class="input-container">
                 <div class="salary-container">
                     <span>$</span>
-                    <input type="number" id="salary-min" name="salary-min" placeholder="0">
+                    <label for="salary-min"></label><input type="number" id="salary-min" name="salary-min" placeholder="0">
                     <span>to</span>
                     <span>$</span>
-                    <input type="number" id="salary-max" name="salary-max" placeholder="100000">
+                    <label for="salary-max"></label><input type="number" id="salary-max" name="salary-max" placeholder="100000">
                 </div>
             </div>
         </section>
@@ -76,10 +76,10 @@
         <section class="form-group-section">
             <div class="label-container">
                 <label for="education-description">Minimum education required</label>
-                <p class="info-text">Esta descripción será mostrada en la postulación. Puede ser modificada en la edición de la vacante</p>
+                <p class="info-text">Describe the job vacancy</p>
             </div>
             <div class="input-container">
-                <textarea id="education-description" name="education_description"></textarea>
+                <textarea id="education-description" name="education_description" placeholder="This description will be displayed publicly"></textarea>
             </div>
         </section>
 

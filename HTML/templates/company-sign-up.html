@@ -1,34 +1,37 @@
 <main class="sign-page-container">
-  <nav class="sign-toggle-nav">
-    <a href="../views/sign-up-job-seeker.html" class="sign-toggle-button">Job Seeker</a>
-    <a href="" class="sign-toggle-button active">Company</a>
-  </nav>
+    <nav class="sign-toggle-nav">
+        <a href="#" onclick="redirectToJobSeekerSignUp(event, this)" class="sign-toggle-button">Job Seeker</a>
+        <a href="#" class="sign-toggle-button active">Company</a>
+    </nav>
 
-  <section class="sign-box">
-    <div class="title-text">
-      <h1>Expand your company!</h1>
-    </div>
+    <section class="sign-box">
+        <div class="title-text">
+            <h1>Expand your company!</h1>
+        </div>
 
-    <section class="sign-entry-form">
-      <form>
-        <label for="name">Company name</label>
-        <input type="text" id="name" placeholder="Enter your company name" required>
+        <section class="sign-entry-form">
+            <form>
+                <label for="name">Company name</label>
+                <input type="text" id="name" placeholder="Enter your company name" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter email address" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
 
-        <label for="cif-nif">CIF/NIF</label>
-        <input type="number" id="cif-nif" placeholder="Enter your CIF/NIF" required>
+                <label for="cif-nif">CIF/NIF</label>
+                <input type="number" id="cif-nif" placeholder="Enter your CIF/NIF" required>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
 
-        <button type="submit" class="submit-button">Login</button>
-      </form>
+                <label for="password-confirm">Confirm Password</label>
+                <input type="password" id="password-confirm" placeholder="Repeat the password" required>
+
+                <button type="submit" class="submit-button" onclick="redirectToJobListingCompany(event, this)">Sign up</button>
+            </form>
+        </section>
+
+        <div class="bottom-text">
+            <p>Already have an account? <a href="#" onclick="redirectToCompanySignIn(event, this)">Login</a></p>
+        </div>
     </section>
-
-    <div class="bottom-text">
-      <p>Already have an account? <a href="../views/sign-in-company.html">Login</a></p>
-    </div>
-  </section>
 </main>
