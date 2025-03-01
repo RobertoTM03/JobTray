@@ -1,67 +1,88 @@
-<main>
-  <form>
-    <section class="form-entry">
-      <div class="section-title">
-        <label>Job Title</label>
-        <p>Job titles must describe one position</p>
-      </div>
-      <label for="job-title"></label><input type="text" id="job-title" name="job-title" placeholder="Lorem Ipsum">
-    </section>
+<main class="vacancy-post-container">
+    <form action="#" method="POST">
 
-    <section class="form-entry">
-      <div class="section-title">
-        <label>Type of Employment</label>
-        <p>You can select multiple types of employment</p>
-      </div>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="employment-type"> Full-Time</label>
-        <label><input type="checkbox" name="employment-type"> Part-Time</label>
-        <label><input type="checkbox" name="employment-type"> Remote</label>
-        <label><input type="checkbox" name="employment-type"> Internship</label>
-        <label><input type="checkbox" name="employment-type"> Contract</label>
-      </div>
-    </section>
+        <section class="form-group-section">
+            <div class="label-container">
+                <label for="job-title">Job Title</label>
+                <p class="info-text">Job titles must describe one position</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="job-title" name="job-title" placeholder="Lore Ipsum">
+            </div>
+        </section>
 
-    <section class="form-entry">
-      <div class="section-title">
-        <label>Salary</label>
-        <p>Please specify the estimated salary range for the role. *You can leave this blank</p>
-      </div>
-      <div class="salary-range">
-        <span>$</span>
-        <input type="number" name="salary-min" placeholder="0">
-        <span>to</span>
-        <span>$</span>
-        <input type="number" name="salary-max" placeholder="100,000">
-      </div>
-    </section>
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Type of Employment</label>
+                <p class="info-text">You can select multiple types of employment</p>
+            </div>
+            <div class="input-container">
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="employment_type" value="full-time"> Full-Time</label>
+                    <label><input type="checkbox" name="employment_type" value="part-time"> Part-Time</label>
+                    <label><input type="checkbox" name="employment_type" value="remote"> Remote</label>
+                    <label><input type="checkbox" name="employment_type" value="internship"> Internship</label>
+                    <label><input type="checkbox" name="employment_type" value="contract"> Contract</label>
+                </div>
+            </div>
+        </section>
 
-    <section class="form-entry">
-      <div class="section-title">
-        <label>Employment sector</label>
-        <p>You can select one employment sector</p>
-      </div>
-      <div class="radio-group">
-        <label><input type="radio" name="employment-sector"> Primary</label>
-        <label><input type="radio" name="employment-sector"> Secondary</label>
-        <label><input type="radio" name="employment-sector"> Third</label>
-      </div>
-    </section>
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Salary</label>
+                <p class="info-text">Please specify the estimated salary range for the role. *You can leave this blank</p>
+            </div>
+            <div class="input-container">
+                <div class="salary-container">
+                    <span>$</span>
+                    <input type="number" id="salary-min" name="salary-min" placeholder="0">
+                    <span>to</span>
+                    <span>$</span>
+                    <input type="number" id="salary-max" name="salary-max" placeholder="100000">
+                </div>
+            </div>
+        </section>
 
-    <section class="form-entry">
-      <div class="section-title">
-        <label>Minimum education required</label>
-        <p>Select the minimum education required</p>
-      </div>
-      <div class="radio-group">
-        <label><input type="radio" name="employment-education-level"> Elementary School</label>
-        <label><input type="radio" name="employment-education-level"> Middle School</label>
-        <label><input type="radio" name="employment-education-level"> High School</label>
-        <label><input type="radio" name="employment-education-level"> University</label>
-        <label><input type="radio" name="employment-education-level"> Master</label>
-      </div>
-    </section>
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Employment Sector</label>
+                <p class="info-text">You can select one employment sector</p>
+            </div>
+            <div class="input-container">
+                <div class="radio-group">
+                    <label><input type="radio" name="sector" value="primary"> Primary</label>
+                    <label><input type="radio" name="sector" value="secondary"> Secondary</label>
+                    <label><input type="radio" name="sector" value="third"> Third</label>
+                </div>
+            </div>
+        </section>
 
-    <button type="submit">Submit offer</button>
-  </form>
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Employment Sector</label>
+                <p class="info-text">You can select one employment sector</p>
+            </div>
+            <div class="input-container">
+                <div class="radio-group">
+                    <label><input type="radio" name="education-level" value="primary"> Elementary School</label>
+                    <label><input type="radio" name="education-level" value="secondary"> Middle School</label>
+                    <label><input type="radio" name="education-level" value="third"> High School</label>
+                    <label><input type="radio" name="education-level" value="third"> University</label>
+                    <label><input type="radio" name="education-level" value="third"> Master</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label for="education-description">Minimum education required</label>
+                <p class="info-text">Esta descripción será mostrada en la postulación. Puede ser modificada en la edición de la vacante</p>
+            </div>
+            <div class="input-container">
+                <textarea id="education-description" name="education_description"></textarea>
+            </div>
+        </section>
+
+        <button type="submit" class="vacancy-submit-btn">Submit offer</button>
+    </form>
 </main>
