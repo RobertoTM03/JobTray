@@ -21,7 +21,7 @@ async function xLuIncludeFile() {
                     //a.innerHTML = await response.text();
                     a.innerHTML = content;
                     z[i].parentNode.replaceChild(a, z[i]);
-                    xLuIncludeFile();
+                    await xLuIncludeFile();
                 }
             } catch (error) {
                 console.error("Error fetching file:", error);
