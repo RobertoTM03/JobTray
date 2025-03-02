@@ -44,7 +44,6 @@
     background-color: white;
     border:white;
     object-fit: cover;
-
 }
 
 .company-buttons-container{
@@ -91,7 +90,7 @@
 }
 
 
-.job-seeker-profile-button{
+.job-seeker-header-profile-button{
     text-align:left;
     background-color: #1d4f9a;
     border-style: none;
@@ -195,4 +194,12 @@
 .section-button-job-seeker-button:hover .popup-menu,
 .buttons-section-header:hover .popup-menu {
     display: flex;
+}
+
+.job-seeker-find-jobs-button-section{
+    padding-right: 15px;
+}
+
+.user-dashboard h1{
+    font-size: 20px;
 }

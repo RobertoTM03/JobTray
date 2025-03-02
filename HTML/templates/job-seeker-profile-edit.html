@@ -2,12 +2,17 @@
     <br>
     <section class="dashboard-profile" >
         <section class="user-dashboard" >
-            <section  class="user-image-dashboard" >
-                <img src="/images/asps.png" class="user-image" alt="user image">
-                <h1>Lore ipsum</h1>
+            <section class="user-image-dashboard">
+                <label for="uploadImage">
+                    <img id="userImage" src="/images/asps.png" class="user-image" alt="user image">
+                </label>
+                <section class="image-controls">
+                    <h1>Lore ipsum</h1>
+                    <input type="file" id="uploadImage" accept="image/*" hidden>
+                </section>
             </section>
             <section>
-                <button class="ApplyNowVacant"><b>Edit profile</b></button>
+                <button class="ApplyNowVacant"><b>Save changes</b></button>
             </section>
         </section>
     </section>
@@ -32,10 +37,9 @@
             Nullam cursus dolor eget malesuada sagittis. Etiam luctus lectus ac ligula molestie efficitur. Pellentesque euismod vitae magna sit amet volutpat. Aenean dignissim dictum justo, eget aliquet massa
             </textarea>
                 </label>
-                <h3>Portfolio</h3>
+                <h3 >Portfolio</h3>
                 <label>
-          <textarea class="text-user"   rows="10" cols="90">
-          </textarea>
+                    <textarea class="text-user portfolio-textarea" placeholder="Enter your portfolio link here" rows="3" cols="90"></textarea>
                 </label>
             </section>
 
