@@ -1,87 +1,152 @@
+---------------------------------------------------------------------------------------------------------------------------
+
 # JobTray
-Roberto Tejero Martín, Alejandra Santana López, Sean Owens Cruz.
+- Roberto Tejero Martín
+- Andrea Santana López
+- Sean Owens Cruz.
 
 # Descripción del Proyecto
 
-JobTray es una applicación web diseñada para la oferta y demanda de trabajo. Permite a los usuarios explorar, postularse y administrar aplicaciones de empleo de manera eficiente. "Encontrar trabajo, en bandeja."
-
+JobTray es una aplicación web diseñada para conectar a compañias con profesionales en búsqueda de nuevas oportunidades laborales. Los usuarios pueden explorar una amplia variedad de vacantes y postularse de manera rápida y sencilla. JobTray busca optimizar la experiencia de búsqueda de empleo y agilizar el proceso de contratación al simplificar cada etapa, beneficiando tanto a las empresas como a los candidatos.
 
 # Listado de Requisitos Funcionales
 
--Registro e inicio de sesión de usuarios.
+- Usuarios normales y compañías podrán realizar inicio y registro de sesión
 
--Creación y edición de perfiles de usuario.
+- Los usuarios y compañías podrán editar sus perfiles 
 
--Búsqueda y filtrado de ofertas laborales.
+- Los usuarios podrán realizar búsqueda y filtrado de ofertas laborales.
+    
+- Los usuarios podrán aplicar a ofertas de empleo.
+    
+- Las compañías podrán crear nuevas ofertas de trabajo.
 
--Aplicación a ofertas de empleo.
+- Las compañías podrán consultar los usuarios que han solicitado.
 
--Notificaciones de estado de aplicación.
+- Las compañías podrán acceder al perfil de los usuarios que han solicitado empleo.
 
--Panel de administración para gestionar ofertas de trabajo.
+# Nombre y Ubicación de los Mockups
+
+Los mockup se encuentran ubicados en la carpeta "/mockups/" y se listan a continuación:
+
+- Find Jobs (Job Seeker) -Ubicado en /mockups/Find Jobs (Job Seeker).png 
+
+- Lista de Trabajos, Vista Compañía - Ubicado en /mockups/Job Listing(Company).png
+
+- Perfil Buscador de Trabajo, Vista Compañía. - Ubicado en /mockups/Job Seeker Profile(Company).png
+
+- Página Principal - Ubicado en /mockups/Main Page.png
+
+- Publicar Trabajo, Vista Compañía - Ubicado en /mockups/Post Job(Company).png
+
+- Perfil Buscador de Trabajo - Ubicado en /mockups/Job Seeker Edit Profile(Job Seeker).png
+
+- Inicio Sesión, Buscador de Trabajo - Ubicado en /mockups/Sign In(Job Seeker).png
+
+- Inicio Sesión, Compañía - Ubicado en /mockups/Sign In(Company).png
+
+- Registro, Buscador de Trabajo - Ubicado en /mockups/Sign Up (Job Seeker).png
+
+- Registro, Compañía - Ubicado en /mockups/Sign Up(Company).png
+
+- Vacancy applicants - Ubicado en /mockups/Vacancy applicants.png
+
+- Vacantes, Vista Compañia - Ubicado en /mockups/Vacancy view(Company).png
+
+- Vacantes, Vista Buscador de Trabajo - Ubicado en /mockups/Vacancy view(Job Seeker).png
 
 
--Diseño responsivo para dispositivos móviles. (?)
-
-# Nombre y Ubicación del Archivo PDF con los Mockups
-
-Nombre del archivo: 
-
-Ubicación: 
 
 # Listado de Archivos Templates e Identificación de Dónde se Cargan
 
-///// Cambia todo esto!! \\\\\\\\
+Los templates se encuentran ubicados en la carpeta "/HTML/templates" y se listan a continuación:
 
-base.html - Estructura base del proyecto, utilizada en todas las páginas.
+- company-header.html (Ubicado en /HTML/templates/company-header.html)
 
-home.html - Cargado en views.py en la función home_view().
+- company-job-listing-list.html (Ubicado en /HTML/templates/company-job-listing-list.html)
 
-login.html - Cargado en views.py en la función login_view().
+- company-sign-in.html (Ubicado en /HTML/templates/company-sign-in.html)
 
-register.html - Cargado en views.py en la función register_view().
+- company-sign-up.html (Ubicado en /HTML/templates/company-sign-up.html)
 
-dashboard.html - Cargado en views.py en la función dashboard_view().
+- company-vacancy-list.html (Ubicado en /HTML/templates/company-vacancy-list.html)
 
-job_list.html - Cargado en views.py en la función job_list_view().
+- company-vacancy-post.html (Ubicado en /HTML/templates/company-vacancy-post.html)
 
-job_detail.html - Cargado en views.py en la función job_detail_view().
+- company-vacancy-toggle-nav.html (Ubicado en /HTML/templates/company-vacancy-toggle-nav.html)
 
-profile.html - Cargado en views.py en la función profile_view().
+- footer.html (Ubicado en /HTML/templates/footer.html)
 
-messages.html - Cargado en views.py en la función messages_view().
-//////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+- job-seeker-find-jobs-list.html (Ubicado en /HTML/templates/job-seeker-find-jobs-list.html)
 
-# Listado de Páginas HTML del Proyecto y Mockups Implementados
-//////////////////// CAMBIAR ESTO TAMBIÉN \\\\\\\\\\\\\\\\\\\\\\\\\\
-Inicio (index.html) - Implementa el mockup home_page.
+- job-seeker-header.html (Ubicado en /HTML/templates/job-seeker-header.html)
 
-Login (login.html) - Implementa el mockup login_page.
+- job-seeker-profile-edit.html (Ubicado en /HTML/templates/job-seeker-profile-edit.html)
 
-Registro (register.html) - Implementa el mockup register_page.
+- job-seeker-profile-view.html (Ubicado en /HTML/templates/job-seeker-profile-view.html)
 
-Panel de usuario (dashboard.html) - Implementa el mockup dashboard_page.
+- job-seeker-search-bar.html (Ubicado en /HTML/templates/job-seeker-search-bar.html)
 
-Lista de empleos (job_list.html) - Implementa el mockup job_list_page.
+- job-seeker-sign-in.html (Ubicado en /HTML/templates/job-seeker-sign-in.html)
 
-Detalle del empleo (job_detail.html) - Implementa el mockup job_detail_page.
+- job-seeker-sign-up.html (Ubicado en /HTML/templates/job-seeker-sign-up.html)
 
-Perfil de usuario (profile.html) - Implementa el mockup profile_page.
+- main-page-header.html (Ubicado en /HTML/templates/main-page-header.html)
 
-Mensajes (messages.html) - Implementa el mockup messages_page.
- ////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+- main-page.html (Ubicado en /HTML/templates/main-page.html)
+
+- main-subtitle.html (Ubicado en /HTML/templates/main-subtitle.html)
+
+- main-tittle.html (Ubicado en /HTML/templates/main-tittle.html)
+
+- sign-header.html (Ubicado en /HTML/templates/sign-header.html)
+
+- vacancy-profile-edit.html (Ubicado en /HTML/templates/vacancy-profile-edit.html)
+
+- vacancy-profile-view.html (Ubicado en /HTML/templates/vacancy-profile-view.html)
+
+
+# Listado de Páginas HTML del Proyecto
+
+Las páginas están ubicadas en la carpeta “/HTML/views/” y se listan a continuación:
+
+- Página Principal (index.html) - Implementa el mockup Main page.
+
+- Inicio Sesión Buscador de Empleo (sign-in-job-seeker.html) - Implementa el mockup Login(Job Seeker).
+
+- Inicio Sesión Empresario (sign-in-company.html) - Implementa el mockup Login(Company)
+
+- Registro Buscador de Empleo (sign-up-job-seeker.html) - Implementa el mockup Sign Up(Job Seeker)
+
+- Registro Empresario (sign-up-company.html) - Implementa el mockup Sign Up(Company).
+
+- Perfil Buscador de Empleo (job-seeker-profile-job-seeker.html) - Implementa el mockup Job Seeker Edit Profile (Job Seeker).
+
+- Perfil Buscador de Empleo, Vista Compañia (job-seeker-profile-company.html) - Implementa el mockup Job Seeker Profile(Company).
+
+
+- Listado de Trabajos (job-listing-company.html) - Implementa el mockup Job Listing(Company)
+
+- Listado de Plazas Disponibles(find-jobs-job-seeker.html) - Implementa el mockup Find Jobs(Job Seeker)
+
+- Listado de Applicantes a Vacante (vacancy-applicants-list-company.html) - Implementa el mockup Vacancy applicants(Company).
+
+- Pagina para publicar Vacantes(vacancy-post-company.html) - Implementa el mockup Post Job(Company)
+
+- Perfil de Vacante (vacancy-view-company.html) - Implementa el mockup Vacancy View(Company)
+
+- Listado de Vacantes-Vista Buscador de Trabajo (vacant-view-job-seeker.html) - Implementa el mockup Vacancy View(Job Seeker)
+
 
 # Página de Inicio de la Aplicación Web
 
-index.html
-
-# Otros Aspectos a Considerar
-
+/HTML/views/index.html
 
 # Enlaces
 
 Figma: https://www.figma.com/design/TBxhHzXYyJd7nLeaRUayU4/G43.7-sean_roberto_andrea?node-id=0-1&t=97y4rc69BVzKrcs6-1
 
-Trello JobTray en Trello
+Trello JobTray en Trello:
+https://trello.com/invite/b/67a102ad44ff36e81e81ba71/ATTIc48e9548c322e8417ec31bd89ca82d5f8BCAB94D/sprint1
 
-
+Enlace del video:  https://drive.google.com/file/d/1AuOi7rspoBwk2XTAXd5EQqmPp2JtO9gj/view?usp=sharing
