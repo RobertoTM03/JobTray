@@ -1,0 +1,98 @@
+.list-container {
+    padding: 1vh;
+    min-height: 80vh;
+}
+
+.list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.list-container thead {
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+}
+
+.list-container tbody {
+    border: 1px solid #ccc;
+}
+
+.list-container th, td {
+    padding: 12px;
+    text-align: center;
+    border: none;
+}
+
+.list-container th{
+    color: #7C8493;
+}
+
+.list-container td {
+    color: #25324B;
+    font-weight: bold;
+}
+
+.clickable-th {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sort-icon {
+    display: inline-block;
+    font-size: 12px;
+    border: none;
+    padding: 0 6px;
+    background: none;
+    transform: rotate(90deg);
+    font-weight: bold;
+}
+
+.list-container td img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1px solid #000000;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    background: transparent;
+}
+
+
+#stage {
+    color: #56CDAD;
+    border: 2px solid #56CDAD;
+}
+
+#job-type {
+    color: #3360A4;
+    border: 2px solid #3360A4;
+}
+
+.list-container td button {
+    color: #3360A4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.see-profiles {
+    border: 1px solid #3360A4;
+    background: #E9EBFD;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.more-options {
+    border: none;
+    background: transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+}

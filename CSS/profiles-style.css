@@ -1,0 +1,133 @@
+.name-page {
+    color: #25324B;
+    border-style: none;
+}
+
+.user-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #aaabaf;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.user-image-dashboard {
+    display: flex inline;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+#about-me {
+    display: flex;
+    margin-left: 50px;
+}
+
+.user-image {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    margin: 10px;
+    border: 1px solid #aaabaf;
+}
+
+.user-image-vacant {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #aaabaf;
+}
+
+.contact-method {
+    border: 1px solid #aaabaf;
+}
+
+.text-user {
+    overflow: hidden;
+    resize: none;
+    border: 1px solid #aaabaf;
+}
+
+
+.job-seeker-profile-button {
+    text-align: left;
+    background-color: #1d4f9a;
+    border: 1px solid #aaabaf;
+    color: gray;
+}
+
+.ApplyNowVacant {
+    background-color: white;
+    color: #1d4f9a;
+    border: 1px solid #aaabaf;
+    height: 35px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.dashboard-profile {
+    display: flex block;
+    justify-content: center;
+}
+
+.edit-zone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-user {
+    display: flex inline;
+    margin-left: 50px;
+    border: 1px solid #aaabaf;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-information {
+    display: flex inline;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-zero {
+    margin: 0;
+}
+
+.portfolio-textarea {
+    margin-left: 50px;
+}
+
+.text-area h3 {
+    margin-left: 50px;
+}
+
+.contact-method,
+.text-user,
+.portfolio-textarea {
+    background-color: #f5f5f5;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.user-image {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.user-image:hover {
+    opacity: 0.7;
+}

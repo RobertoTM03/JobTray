@@ -1,0 +1,88 @@
+<main class="vacancy-post-container">
+    <form action="#" method="POST">
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label for="job-title">Job Title</label>
+                <p class="info-text">Job titles must describe one position</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="job-title" name="job-title" placeholder="Lore Ipsum">
+            </div>
+        </section>
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Type of Employment</label>
+                <p class="info-text">You can select multiple types of employment</p>
+            </div>
+            <div class="input-container">
+                <div class="checkbox-group">
+                    <label><input type="radio" name="employment_type" value="full-time"> Full-Time</label>
+                    <label><input type="radio" name="employment_type" value="part-time"> Part-Time</label>
+                    <label><input type="checkbox" name="employment_type" value="remote"> Remote</label>
+                    <label><input type="checkbox" name="employment_type" value="internship"> Internship</label>
+                    <label><input type="checkbox" name="employment_type" value="contract"> Contract</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Salary</label>
+                <p class="info-text">Please specify the estimated salary range for the role. *You can leave this blank</p>
+            </div>
+            <div class="input-container">
+                <div class="salary-container">
+                    <span>$</span>
+                    <label for="salary-min"></label><input type="number" id="salary-min" name="salary-min" placeholder="0">
+                    <span>to</span>
+                    <span>$</span>
+                    <label for="salary-max"></label><input type="number" id="salary-max" name="salary-max" placeholder="100000">
+                </div>
+            </div>
+        </section>
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Employment Sector</label>
+                <p class="info-text">You can select one employment sector</p>
+            </div>
+            <div class="input-container">
+                <div class="radio-group">
+                    <label><input type="radio" name="sector" value="primary"> Primary</label>
+                    <label><input type="radio" name="sector" value="secondary"> Secondary</label>
+                    <label><input type="radio" name="sector" value="third"> Third</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label>Employment Sector</label>
+                <p class="info-text">You can select one employment sector</p>
+            </div>
+            <div class="input-container">
+                <div class="radio-group">
+                    <label><input type="radio" name="education-level" value="primary"> Elementary School</label>
+                    <label><input type="radio" name="education-level" value="secondary"> Middle School</label>
+                    <label><input type="radio" name="education-level" value="third"> High School</label>
+                    <label><input type="radio" name="education-level" value="third"> University</label>
+                    <label><input type="radio" name="education-level" value="third"> Master</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-group-section">
+            <div class="label-container">
+                <label for="education-description">Minimum education required</label>
+                <p class="info-text">Describe the job vacancy</p>
+            </div>
+            <div class="input-container">
+                <textarea id="education-description" name="education_description" placeholder="This description will be displayed publicly"></textarea>
+            </div>
+        </section>
+
+        <button type="submit" class="vacancy-submit-btn" onclick="redirectToJobListingCompany(event, this)">Submit offer</button>
+    </form>
+</main>
