@@ -73,6 +73,17 @@
     text-align: right;
 }
 
+.SaveChanges {
+    background-color: white;
+    color: #1d4f9a;
+    border: 1px solid #aaabaf;
+    height: 35px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
 .dashboard-profile {
     display: flex block;
     justify-content: center;
@@ -130,4 +141,75 @@
 
 .user-image:hover {
     opacity: 0.7;
+}
+
+.salary-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.salary-text {
+    font-weight: bold;
+}
+
+.salary-unit {
+    font-size: 14px;
+    color: gray;
+}
+
+.vacancy-title {
+    font-size: 18px;
+    color: #25324B;
+    font-weight: bold;
+}
+
+.vacancy-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vacancy-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #25324B;
+    min-width: 180px;
+}
+
+.vacancy-input {
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
+}
+
+.salary-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.salary-text {
+    font-weight: bold;
+    color: #25324B;
+}
+
+.salary-unit {
+    font-size: 14px;
+    color: gray;
+}
+
+.salary-input {
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
 }

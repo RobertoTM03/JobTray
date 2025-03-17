@@ -1,0 +1,215 @@
+{
+  "jobSeekers": [
+    {
+      "id": "1",
+      "fullName": "Roberto Tejero Martín",
+      "email": "roberto@email.com",
+      "phoneNumber": "+34 123 456 799",
+      "otherContactMethod": "Empty",
+      "userProfileDescription": "Empty",
+      "portfolioLink": "Empty",
+      "image": "/images/jobSeekers/jobSeeker-default.jpg"
+    },
+    {
+      "id": "2",
+      "fullName": "Andrea Santana López",
+      "email": "andrea@email.com",
+      "phoneNumber": "+34 123 456 789",
+      "otherContactMethod": "Empty",
+      "userProfileDescription": "Empty",
+      "portfolioLink": "Empty",
+      "image": "/images/jobSeekers/jobSeeker-default.jpg"
+    },
+    {
+      "id": "3",
+      "fullName": "Sean Owens Cruz",
+      "email": "sean@email.com",
+      "phoneNumber": "+34 123 456 789",
+      "otherContactMethod": "Empty",
+      "userProfileDescription": "Empty",
+      "portfolioLink": "Empty",
+      "image": "/images/jobSeekers/jobSeeker-default.jpg"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "cifNif": "A12345678",
+      "email": "apple@email.com",
+      "image": "/images/companies/company-default.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Samsung",
+      "cifNif": "A12345678",
+      "email": "samsung@email.com",
+      "image": "/images/companies/company-default.jpg"
+    }
+  ],
+  "vacancies": [
+    {
+      "id": "1",
+      "owner": 1,
+      "name": "Software Engineer",
+      "stage": "Open",
+      "postedDate": "2000-01-01",
+      "dueDate": "2000-12-31",
+      "jobType": "Full-Time",
+      "minimumSalary": 1300,
+      "maximumSalary": 13000,
+      "applicants": [
+        {
+          "id": 3,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        },
+        {
+          "id": 1,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        }
+      ],
+      "employmentSector": "Secondary",
+      "minimumEducationRequired": "University",
+      "description": "Lorem ipsum Sed arcu elit, finibus eget ipsum vitae, eleifend blandit justo. Nulla non ultrices urna. Etiam ut ex lacinia, vehicula urna eu, tincidunt nulla. Morbi quis vehicula massa, non ultrices tellus. Proin dignissim mollis mauris in tristique. Etiam a mauris a lorem euismod laoreet vel a augue. Proin ut laoreet nisi, vitae congue risus. ",
+      "image": "/images/vacancies/vacancy-1.jpg"
+    },
+    {
+      "id": "2",
+      "owner": 2,
+      "name": "Marketing",
+      "stage": "Open",
+      "postedDate": "2000-01-01",
+      "dueDate": "2000-12-31",
+      "jobType": "Half-Time",
+      "minimumSalary": 1300,
+      "maximumSalary": 13000,
+      "applicants": [
+        {
+          "id": 2,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        },
+        {
+          "id": 3,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        }
+      ],
+      "employmentSector": "Third",
+      "minimumEducationRequired": "High School",
+      "description": "Lorem ipsum Sed arcu elit, finibus eget ipsum vitae, eleifend blandit justo. Nulla non ultrices urna. Etiam ut ex lacinia, vehicula urna eu, tincidunt nulla. Morbi quis vehicula massa, non ultrices tellus. Proin dignissim mollis mauris in tristique. Etiam a mauris a lorem euismod laoreet vel a augue. Proin ut laoreet nisi, vitae congue risus. ",
+      "image": "/images/vacancies/vacancy-2.png"
+    },
+    {
+      "id": "3",
+      "owner": 1,
+      "name": "Cleaner",
+      "stage": "Close",
+      "postedDate": "1999-01-01",
+      "dueDate": "1999-12-31",
+      "jobType": "Half-Time",
+      "minimumSalary": 1300,
+      "maximumSalary": 13000,
+      "applicants": [
+        {
+          "id": 2,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        },
+        {
+          "id": 3,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        }
+      ],
+      "employmentSector": "Third",
+      "minimumEducationRequired": "High School",
+      "description": "Lorem ipsum Sed arcu elit, finibus eget ipsum vitae, eleifend blandit justo. Nulla non ultrices urna. Etiam ut ex lacinia, vehicula urna eu, tincidunt nulla. Morbi quis vehicula massa, non ultrices tellus. Proin dignissim mollis mauris in tristique. Etiam a mauris a lorem euismod laoreet vel a augue. Proin ut laoreet nisi, vitae congue risus.",
+      "image": "/images/vacancies/vacancy-3.jpg"
+    },
+    {
+      "id": "f759",
+      "owner": 1,
+      "name": "aaaa",
+      "stage": "Open",
+      "postedDate": "2025-03-17",
+      "dueDate": "2025-12-31",
+      "jobType": "full-time",
+      "minimumSalary": 1,
+      "maximumSalary": 111,
+      "applicants": [
+        {
+          "id": 1,
+          "stage": "new",
+          "applyDate": "2025-03-17"
+        }
+      ],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "third",
+      "description": "1111",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "2ef9",
+      "owner": 1,
+      "name": "1",
+      "stage": "Open",
+      "postedDate": "2025-03-17",
+      "dueDate": "2025-06-17",
+      "jobType": "432342",
+      "minimumSalary": 1,
+      "maximumSalary": 11,
+      "applicants": [
+        {
+          "id": 1,
+          "stage": "new",
+          "applyDate": "2025-03-17"
+        }
+      ],
+      "employmentSector": "third",
+      "minimumEducationRequired": "third",
+      "description": "222222222222222222",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "831b",
+      "owner": 1,
+      "name": "2",
+      "stage": "Open",
+      "postedDate": "2025-03-17",
+      "dueDate": "2025-06-17",
+      "jobType": "full-time",
+      "minimumSalary": 2,
+      "maximumSalary": 22,
+      "applicants": [
+        {
+          "id": 1,
+          "stage": "new",
+          "applyDate": "2025-03-17"
+        }
+      ],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "third",
+      "description": "222",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "acc9",
+      "owner": 1,
+      "name": "2332323",
+      "stage": "Open",
+      "postedDate": "2025-03-17",
+      "dueDate": "2025-06-17",
+      "jobType": "internship",
+      "minimumSalary": 33,
+      "maximumSalary": 333,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "third",
+      "description": "33",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    }
+  ]
+}

@@ -6,7 +6,9 @@
     <meta name="keywords" content="HTML5, CSS3, JavaScript">
 
     <title>JobTray</title>
-    <script src="/JS/xlu-include-file.js"></script>
+    <script src="/JS/redirectFunctions.js"></script>
+    <script src="/JS/auxiliaryFunctions.js"></script>
+    <script src="/JS/viewComposition.js"></script>
 
     <link rel="stylesheet" href="/CSS/general-style.css">
     <link rel="stylesheet" href="/CSS/headers.css">
@@ -17,20 +19,20 @@
 </head>
 <body>
     <div id="wrapper">
-        <header id="sign_header" xlu-include-file="/HTML/templates/company-header.html">
+        <header id="company_header">
         </header>
 
-        <section id="main-tittle" xlu-include-file="/HTML/templates/main-tittle.html">
+        <section id="main-tittle">
         </section>
 
-        <main id="vacancy-post-content" xlu-include-file="/HTML/templates/company-vacancy-post.html">
+        <main id="vacancy-post-content">
         </main>
 
-        <footer id="footer" xlu-include-file="/HTML/templates/footer.html">
+        <footer id="footer">
         </footer>
     </div>
     <script>
-        xLuIncludeFile();
+        loadViewVacancyPostCompany();
     </script>
 </body>
 </html>

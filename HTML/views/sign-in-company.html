@@ -6,8 +6,12 @@
         <meta name="keywords" content="HTML5, CSS3, JavaScript">
 
         <title>JobTray</title>
-        <script src="/JS/xlu-include-file.js"></script>
+        <script src="/JS/redirectFunctions.js"></script>
+        <script src="/JS/auxiliaryFunctions.js"></script>
+        <script src="/JS/viewComposition.js"></script>
         <script src="/JS/ValidationSigInCompany.js"></script>
+
+
         <link rel="stylesheet" href="/CSS/general-style.css">
         <link rel="stylesheet" href="/CSS/headers.css">
         <link rel="stylesheet" href="/CSS/sign-form-style.css">
@@ -15,17 +19,17 @@
     </head>
     <body>
         <div id="wrapper">
-            <header id="sign_header" xlu-include-file="/HTML/templates/sign-header.html">
+            <header id="sign_header">
             </header>
 
-            <main id="sign-content" xlu-include-file="/HTML/templates/company-sign-in.html">
+            <main id="sign-content">
             </main>
 
-            <footer id="footer" xlu-include-file="/HTML/templates/footer.html">
+            <footer id="footer">
             </footer>
         </div>
         <script>
-            xLuIncludeFile();
+            loadViewSignInCompany();
         </script>
     </body>
 </html>

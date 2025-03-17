@@ -98,3 +98,14 @@ textarea {
     text-align: center;
     margin: 30px auto;
 }
+
+.error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
