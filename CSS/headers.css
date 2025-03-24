@@ -168,7 +168,6 @@
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
 .popup-menu {
     position: absolute;
     top: 100%;
@@ -199,6 +198,8 @@
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
+
+
 .popup-btn:hover {
     background: #f1f1f1;
     border-color: #999;
@@ -226,4 +227,12 @@
 
 .user-dashboard h1{
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .company-buttons{
+        display:none;
+
+    }
+
 }
