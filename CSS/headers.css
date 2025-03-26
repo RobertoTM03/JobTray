@@ -210,6 +210,40 @@
     font-weight: bold;
 }
 
+
+.mobile-btn{
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+    font: bold 20px/0.5 "Roboto", sans-serif;
+}
+.mobile-btn-container {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mobile-btn-container .company-buttons {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+
+
 .section-button-job-seeker-button,
 .buttons-section-header {
     position: relative;
@@ -230,9 +264,15 @@
 }
 
 @media screen and (max-width: 600px) {
-    .company-buttons{
-        display:none;
-
+    .company-buttons {
+        display: none;
     }
 
+    .mobile-btn{
+        display: block;
+    }
+
+    .job-seeker-find-jobs-button{
+        display: none;
+    }
 }
