@@ -4,11 +4,13 @@
     gap: 20px;
     height: 70%;
     min-height: 80vh;
+    position: relative;
 }
 
 .filter-aside {
     width: 20vw;
     padding: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .filter-aside fieldset {
@@ -58,7 +60,7 @@
     cursor: pointer;
 }
 
-.logo img{
+.logo img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -94,4 +96,90 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.apply-filters-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#apply-filters {
+    background-color: #1D4F9A;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#apply-filters:hover {
+    background-color: #163d7a;
+}
+
+/* Botón de filtros en mobile */
+.filters-toggle {
+    display: none;
+    background-color: #1D4F9A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 900;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+    .filter-aside {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 80vw;
+        max-height: 80vh;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow-y: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .filter-aside.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .filters-toggle {
+        display: block;
+    }
+
+    .list-container {
+        flex-direction: column;
+    }
+
+    .job-list {
+        width: 100%;
+    }
 }

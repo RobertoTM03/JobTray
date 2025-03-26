@@ -144,7 +144,9 @@ function loadViewVacancyPostCompany() {
         loadHeaderLogo();
         loadCompanyProfileHeader(getCurrentCompanyId());
     });
-    loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle');
+    loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
+        setMainTittle("Post a Job");
+    });
     loadTemplate('/HTML/templates/company-vacancy-post.html', 'vacancy-post-content', () => {
         document.querySelector(".vacancy-submit-btn").addEventListener("click", submitVacancyForm);
     });
