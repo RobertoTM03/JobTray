@@ -179,25 +179,67 @@ async function loadContentFindJobsJobSeekers() {
         const vacancies = await vacanciesResponse.json();
 
         const jobListContainer = document.querySelector(".job-list");
-        if (!jobListContainer) throw new Error("Container ‘.job-list’ not found in DOM.");
+        const seeMoreButton = document.querySelector("#see-more");
+        let currentIndex = 0;
+        const itemsPerPage = 5;
 
-        let seeMoreButton = document.querySelector(".see-more-button");
+        // Función para renderizar las siguientes N vacantes
+        function renderVacancies() {
+            const nextIndex = Math.min(currentIndex + itemsPerPage, vacancies.length);
 
-        vacancies.forEach((vacancy) => {
-            const jobCard = jobCardTemplate.cloneNode(true);
+            for (let i = currentIndex; i < nextIndex; i++) {
+                const vacancy = vacancies[i];
+                const jobCard = jobCardTemplate.cloneNode(true);
 
-            jobCard.querySelector(".logo img").src = vacancy.image;
-            jobCard.querySelector(".job-title").innerText = vacancy.name;
-            jobCard.querySelector(".job-description").innerText = vacancy.description.substring(0, 100) + "...";
-            jobCard.querySelector(".job-salary").innerText = `$${vacancy.minimumSalary} - $${vacancy.maximumSalary}`;
-            jobCard.querySelector(".job-type").innerText = vacancy.jobType;
+                jobCard.querySelector(".logo img").src = vacancy.image;
+                jobCard.querySelector(".job-title").innerText = vacancy.name;
+                jobCard.querySelector(".job-description").innerText = vacancy.description.substring(0, 100) + "...";
+                jobCard.querySelector(".job-salary").innerText = `$${vacancy.minimumSalary} - $${vacancy.maximumSalary}`;
+                jobCard.querySelector(".job-type").innerText = vacancy.jobType;
 
-            jobCard.addEventListener("click", () => {
-                redirectToVacancyViewJobSeeker(event, this, vacancy.id);
-            })
+                jobCard.addEventListener("click", () => {
+                    redirectToVacancyViewJobSeeker(event, this, vacancy.id);
+                });
 
-            jobListContainer.insertBefore(jobCard, seeMoreButton);
+                jobListContainer.insertBefore(jobCard, seeMoreButton.parentElement);
+            }
+
+            currentIndex = nextIndex;
+
+            if (currentIndex >= vacancies.length) {
+                seeMoreButton.style.display = "none";
+            }
+        }
+
+        // Primera carga
+        renderVacancies();
+
+        // Evento "See more..."
+        seeMoreButton.addEventListener("click", () => {
+            renderVacancies();
         });
+
+        // Filtros y overlay (sin cambios)
+        const filtersToggleBtn = document.querySelector('.filters-toggle');
+        const filterAside = document.querySelector('.filter-aside');
+        const applyFiltersBtn = document.getElementById('apply-filters');
+        const overlay = document.querySelector('.overlay');
+
+        filtersToggleBtn.addEventListener('click', () => {
+            filterAside.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        applyFiltersBtn.addEventListener('click', () => {
+            filterAside.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            filterAside.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
     } catch (error) {
         console.error(`Error loading vacancies:`, error.message);
     }
@@ -248,13 +290,38 @@ async function loadCompanyVacancies(companyId) {
             row.querySelector("#vacancy-job-type").innerText = vacancy.jobType;
             row.querySelector("#vacancy-applicants-number").innerText = countApplicants(vacancy);
 
-            if (vacancy.imageUrl) {
-                row.querySelector("#vacancy-image").src = vacancy.imageUrl;
-            }
-
             row.querySelector("#vacancy-see-profile-button").onclick = () => {
                 redirectToVacancyViewCompany(event, this, vacancy.id);
             }
+
+            const moreOptionsBtn = row.querySelector(".more-options");
+            const optionsMenu = row.querySelector(".options-menu");
+            const deleteBtn = row.querySelector(".delete-vacancy");
+
+            moreOptionsBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+
+                document.querySelectorAll(".options-menu").forEach(menu => menu.style.display = "none");
+                optionsMenu.style.display = "block";
+            });
+
+            deleteBtn.addEventListener("click", async () => {
+                try {
+                    const deleteResponse = await fetch(`http://localhost:3000/vacancies/${vacancy.id}`, { method: 'DELETE' });
+                    if (deleteResponse.ok) {
+                        console.log("Vacancy deleted");
+                        row.remove(); // Elimina la fila de la tabla
+                    } else {
+                        console.error("Error deleting vacancy");
+                    }
+                } catch (err) {
+                    console.error("Delete error:", err);
+                }
+            });
+
+            document.addEventListener("click", () => {
+                optionsMenu.style.display = "none";
+            });
 
             jobListingContainer.appendChild(row);
         });
@@ -318,6 +385,51 @@ async function loadVacancyApplicants(vacancyId) {
             row.querySelector("#applicant-see-profile-button").onclick = function (event) {
                 redirectToJobSeekerProfileViewCompany(event, this, applicant.id);
             };
+
+            const moreOptionsBtn = row.querySelector(".more-options");
+            const optionsMenu = row.querySelector(".options-menu");
+            const declineBtn = row.querySelector(".decline-vacancy");
+
+            moreOptionsBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                document.querySelectorAll(".options-menu").forEach(menu => menu.style.display = "none");
+                optionsMenu.style.display = "block";
+            });
+
+            declineBtn.addEventListener("click", async () => {
+                try {
+                    const vacancyId = vacancy.id;
+                    const applicantId = applicant.id;
+
+                    const response = await fetch(`http://localhost:3000/vacancies/${vacancyId}`);
+                    if (!response.ok) throw new Error("Error fetching vacancy");
+
+                    const vacancyData = await response.json();
+
+                    vacancyData.applicants = vacancyData.applicants.filter(applicant => applicant.id !== applicantId);
+
+                    const updateResponse = await fetch(`http://localhost:3000/vacancies/${vacancyId}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(vacancyData)
+                    });
+
+                    if (updateResponse.ok) {
+                        console.log("Postulante eliminado de la vacante");
+                        row.remove();
+                    } else {
+                        console.error("Error eliminando al postulante");
+                    }
+                } catch (err) {
+                    console.error("Error:", err);
+                }
+            });
+
+            document.addEventListener("click", () => {
+                optionsMenu.style.display = "none";
+            });
 
             applicantsListContainer.appendChild(row);
         });

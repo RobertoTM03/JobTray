@@ -109,3 +109,21 @@ textarea {
     font-size: 14px;
     margin-top: 5px;
 }
+
+
+@media (max-width: 800px) {
+    .form-group-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group-section .label-container,
+    .form-group-section .input-container {
+        width: 100%;
+    }
+
+    .vacancy-submit-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
