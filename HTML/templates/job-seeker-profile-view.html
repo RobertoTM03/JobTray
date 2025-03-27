@@ -1,7 +1,27 @@
 <main>
-  <br>
-  <section class="dashboard-profile" >
+    <section class="dashboard-profile" >
+        <section class="user-dashboard" >
+
+            <section class="user-image-dashboard">
+                <label for="uploadImage">
+                    <img id="job-seeker-image" src="/images/asps.png" class="user-image" alt="user image">
+                </label>
+                <section class="image-controls">
+                    <h1 id="job-seeker-name">Lore ipsum</h1>
+                    <input type="file" id="uploadImage" accept="image/*" hidden>
+                </section>
+            </section>
+
+            <section >
+                <button class="SaveChanges"><b>Save changes</b></button>
+            </section>
+
+        </section>
+    </section>
+    <section id="tit<main>
+    <section class="dashboard-profile" >
     <section class="user-dashboard" >
+
         <section class="user-image-dashboard">
             <label for="uploadImage">
                 <img id="job-seeker-image" src="/images/asps.png" class="user-image" alt="user image">
@@ -11,46 +31,42 @@
                 <input type="file" id="uploadImage" accept="image/*" hidden>
             </section>
         </section>
-    </section>
-  </section>
-  <section id="about-me" >
-    <h3>About me</h3>
-  </section>
-  <section class="edit-zone">
-    <section class="text-area">
-      <section>
-          <label>
-                <textarea class="text-user" id="job-seeker-description" readonly maxlength="1905" rows="50" cols="150"></textarea>
-          </label>
-          <h3>Portfolio</h3>
-          <label>
-              <textarea id="job-seeker-portfolio" class="text-user portfolio-textarea" placeholder="Enter your portfolio link here" rows="3" cols="90"></textarea>
-          </label>
-      </section>
+
+        <section >
+            <button class="SaveChanges"><b>Save changes</b></button>
+        </section>
 
     </section>
-    <section class="contact-information" >
-      <section  >
-        <h3 class="display-section">Contact  Information</h3>
-      </section>
-      <section class="text-center" >
-        <h4 class ="margin-zero">Email address</h4>
-          <label>
-              <input type="text" class="contact-method" id="job-seeker-email" readonly>
-          </label>
-      </section>
-      <section class="text-center" >
-        <h4 class ="margin-zero">Phone number</h4>
-          <label>
-              <input type="text" class="contact-method" id="job-seeker-phone-number" readonly>
-          </label>
-      </section>
-        <section class="text-center" >
-            <h4 class ="margin-zero">Other</h4>
-            <label>
-                <input type="text" class="contact-method" id="job-seeker-other-contact-method">
-            </label>
+    </section>
+    <section id="titles">
+        <section id="about-me">
+            <h3 >About me</h3>
+        </section>
+        <section id="contact-information">
+            <h3>Contact  Information</h3>
         </section>
     </section>
-  </section>
+
+    <section id="space-user">
+        <section class="space-write">
+            <textarea readonly class="text-user" id="job-seeker-description" ></textarea>
+            <h3 id="portfolio" >Portfolio</h3>
+            <textarea readonly class="portfolio-textarea" id="job-seeker-portfolio"  placeholder="Enter your portfolio link here" ></textarea>
+
+        </section>
+
+        <section id="space-write-email-phone-others">
+            <h4 class="margin-zero" >Email Address</h4>
+            <input readonly class="contact-method" type="text"  id="job-seeker-email" >
+            <h4 class="margin-zero">Phone number</h4>
+            <input readonly class="contact-method" type="tel"  id="job-seeker-phone-number" >
+            <h4 class="margin-zero" >Other</h4>
+            <input readonly class="contact-method" type="text"  id="job-seeker-other-contact-method" >
+        </section>
+
+    </section>
+
+
+</main>
+
 </main>

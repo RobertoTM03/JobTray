@@ -36,9 +36,10 @@ function validateUser() {
     console.log("Contraseña ingresada:", passwordField.value);
     console.log("¿Es válida la contraseña?", validpassword);
 
-    if (validemail && validpassword) {
-        redirectToFindJobsJobSeeker(event); // Llamamos la función de redirección
-    } else {
-        alert("Por favor, ingresa un correo válido y una contraseña.");
-    }
+        if (validemail && validpassword) {
+            redirectToFindJobsJobSeeker(event); // Llamamos la función de redirección
+        } else {
+            alert("Por favor, ingresa un correo válido y una contraseña.");
+        }
+
 }

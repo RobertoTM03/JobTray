@@ -1,65 +1,56 @@
+
 <main>
-    <br>
-    <section class="dashboard-profile" >
-        <section class="user-dashboard" >
-            <section class="user-image-dashboard">
-                <label for="upload-image">
-                    <img id="vacancy-image" src="/images/asps.png" class="user-image" alt="user image">
-                </label>
-                <section class="image-controls">
-                    <h1 id="vacancy-name">Lore ipsum</h1>
-                    <input type="file" id="upload-image" accept="images/*" hidden>
+    <section class="father-vacancy">
+        <section class="dashboard-vacancy-new">
+            <section class="item-vacancy">
+                <picture >
+                    <img id="vacancy-image" src="/images/asps.png" class="user-image-vacancy" alt="user image">
+                </picture>
+                <section>
+                    <h1 class="font-vacancy"> Lore ipsum</h1>
                 </section>
             </section>
-
-
-            <section>
+            <section class="button-save">
                 <button class="SaveChanges"><b>Save Changes</b></button>
             </section>
         </section>
-    </section>
-    <br>
-    <section class="edit-zone">
-        <section class="text-area">
-            <section>
-                <label>
-                    <textarea class="text-user" id="vacancy-description" maxlength="10000" rows="50" cols="150"></textarea>
-                </label>
-            <section>
-       </section>
+        <section class="write-space-vacancy">
+
+            <section class="space-write">
+                <textarea  placeholder="Enter your requirements for the job position " class="text-user-vacancy" id="job-seeker-description" ></textarea>
             </section>
 
+            <section class="vacancy-request">
+
+                    <h3 class="vacancy-title">About This Role</h3>
+                    <div class="vacancy-field">
+                        <h4 class="vacancy-label">Apply Before:</h4>
+                        <input type="date" id="vacancy-apply-before" class="vacancy-input">
+                    </div>
+                    <div class="vacancy-field">
+                        <h4 class="vacancy-label">Job Posted On:</h4>
+                        <input type="date" id="vacancy-posted-date" class="vacancy-input" readonly>
+                    </div>
+                    <div class="vacancy-field">
+                        <h4 class="vacancy-label">Job Type:</h4>
+                        <input placeholder="Enter job type" type="text" id="vacancy-job-type" class="vacancy-input">
+                    </div>
+                    <div class="vacancy-field">
+                        <h4 class="vacancy-label">Salary</h4>
+                        <div class="salary-container">
+                            <input  placeholder="0" type="text" id="vacancy-min-salary" class="vacancy-input salary-input">
+                            <span class="salary-unit">$ -</span>
+                        </div>
+                        <div class="salary-container">
+                            <input placeholder="1200" type="text" id="vacancy-max-salary" class="vacancy-input salary-input">
+                            <span class="salary-unit">$</span>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
         </section>
 
-        <section class="vacancy-details">
-            <h3 class="vacancy-title">About This Role</h3>
 
-            <div class="vacancy-field">
-                <h4 class="vacancy-label">Apply Before:</h4>
-                <input type="date" id="vacancy-apply-before" class="vacancy-input">
-            </div>
-
-            <div class="vacancy-field">
-                <h4 class="vacancy-label">Job Posted On:</h4>
-                <input type="date" id="vacancy-posted-date" class="vacancy-input" readonly>
-            </div>
-
-            <div class="vacancy-field">
-                <h4 class="vacancy-label">Job Type:</h4>
-                <input type="text" id="vacancy-job-type" class="vacancy-input">
-            </div>
-
-            <div class="vacancy-field">
-                <h4 class="vacancy-label">Salary</h4>
-                <div class="salary-container">
-                    <input type="text" id="vacancy-min-salary" class="vacancy-input salary-input">
-                    <span class="salary-unit">$ -</span>
-                </div>
-                <div class="salary-container">
-                    <input type="text" id="vacancy-max-salary" class="vacancy-input salary-input">
-                    <span class="salary-unit">$</span>
-                </div>
-            </div>
-        </section>
     </section>
 </main>

@@ -44,18 +44,19 @@ function validateCompany(event) {
     let validPassword = passwordField.validity.valid;
     let validPasswordConfirm = passwordConfirm.validity.valid;
 
-    // Verificar si las contraseñas coinciden
-    let passwordsMatch = passwordField.value === passwordConfirm.value;
 
-    console.log("Nombre de la empresa ingresado:", companyName.value);
-    console.log("¿Es válido el nombre?", validCompanyName);
-    console.log("Email ingresado:", emailField.value);
-    console.log("¿Es válido el email?", validEmail);
-    console.log("CIF/NIF ingresado:", cifNifField.value);
-    console.log("¿Es válido el CIF/NIF?", validCifNif);
-    console.log("Contraseña ingresada:", passwordField.value);
-    console.log("¿Es válida la contraseña?", validPassword);
-    console.log("¿Las contraseñas coinciden?", passwordsMatch);
+        // Verificar si las contraseñas coinciden
+        let passwordsMatch = passwordField.value === passwordConfirm.value;
+
+        console.log("Nombre de la empresa ingresado:", companyName.value);
+        console.log("¿Es válido el nombre?", validCompanyName);
+        console.log("Email ingresado:", emailField.value);
+        console.log("¿Es válido el email?", validEmail);
+        console.log("CIF/NIF ingresado:", cifNifField.value);
+        console.log("¿Es válido el CIF/NIF?", validCifNif);
+        console.log("Contraseña ingresada:", passwordField.value);
+        console.log("¿Es válida la contraseña?", validPassword);
+        console.log("¿Las contraseñas coinciden?", passwordsMatch);
 
     if (validCompanyName && validEmail && validCifNif && validPassword && passwordsMatch) {
         redirectToJobListingCompany(event);
@@ -69,4 +70,5 @@ function validateCompany(event) {
 
         alert(errorMessage);
     }
+
 }

@@ -36,9 +36,10 @@ function validateCompany() {
     console.log("Contraseña ingresada:", passwordFieldC.value);
     console.log("¿Es válida la contraseña?", validpasswordC);
 
-    if (validemailC && validpasswordC) {
-        redirectToJobListingCompany(event);
-    } else {
-        alert("Por favor, ingresa un correo válido y una contraseña.");
-    }
+        if (validemailC && validpasswordC) {
+            redirectToJobListingCompany(event);
+        } else {
+            alert("Por favor, ingresa un correo válido y una contraseña.");
+        }
+
 }

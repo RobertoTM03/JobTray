@@ -9,8 +9,7 @@
     align-items: center;
     width: 100%;
     border: 1px solid #aaabaf;
-    margin-left: 50px;
-    margin-right: 50px;
+
 }
 
 .user-image-dashboard {
@@ -18,20 +17,33 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+    margin-left:30px;
 }
 
 #about-me {
-    display: flex;
-    margin-left: 50px;
+    margin-right:120px;
 }
 
 .user-image {
     border-radius: 100%;
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     background-color: black;
     margin: 10px;
     border: 1px solid #aaabaf;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+.user-image-vacancy{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    margin: 40px 20px 40px 40px;
+    border: 1px solid #aaabaf;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+
 }
 
 .user-image-vacant {
@@ -51,7 +63,22 @@
 .text-user {
     overflow: hidden;
     resize: none;
-    border: 1px solid #aaabaf;
+    width:95%;
+    height:600px;
+    background-color: #f5f5f5;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    margin:0px 0px 0px 50px;
+}
+.text-user-vacancy {
+    overflow: hidden;
+    resize: none;
+    width:95%;
+    height:600px;
+    background-color: #f5f5f5;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    margin:0px;
 }
 
 
@@ -80,7 +107,7 @@
     height: 35px;
     border-radius: 4px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     text-align: right;
 }
 
@@ -94,20 +121,9 @@
     justify-content: space-between;
 }
 
-.text-user {
-    display: flex inline;
-    margin-left: 50px;
-    border: 1px solid #aaabaf;
-    padding: 10px;
-    margin-bottom: 20px;
-}
 
-.contact-information {
-    display: flex inline;
-    flex-direction: column;
-    margin-right: 50px;
-    gap: 5px;
-}
+
+
 
 .text-center {
     text-align: center;
@@ -118,26 +134,29 @@
 }
 
 .portfolio-textarea {
-    margin-left: 50px;
-}
 
-.text-area h3 {
-    margin-left: 50px;
-}
-
-.contact-method,
-.text-user,
-.portfolio-textarea {
+    margin:0px 0px 0px 50px;
+    resize: none;
+    width:95%;
+    box-sizing: border-box;
     background-color: #f5f5f5;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
     padding: 8px;
 }
 
-.user-image {
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out;
+.text-area h3 {
+    margin-left: 50px;
 }
+
+.contact-method{
+    background-color: #f5f5f5;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
 
 .user-image:hover {
     opacity: 0.7;
@@ -212,4 +231,146 @@
     border-radius: 5px;
     padding: 5px;
     background-color: #f5f5f5;
+}
+#titles{
+    display: flex!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+    width: 100%!important;
+
+}
+#about-me{
+    margin-left:50px!important;
+}
+#contact-information {
+    margin-right:140px!important;
+}
+#space-user{
+    display:flex!important;
+    justify-content:space-between!important;
+    height:750px!important;
+}
+.space-write{
+    width:75%!important;
+}
+#portfolio{
+    margin:0px 0px 0px 50px!important;
+}
+#space-write-email-phone-others{
+    width:17%;
+}
+.father-vacancy{
+    display:flex;
+    flex-direction:column;
+}
+.dashboard-vacancy-new{
+     width:95%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+    margin: 0 auto;
+    border: 1px solid #aaabaf;
+}
+.item-vacancy{
+    width:20%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.font-vacancy{
+    font-size:xx-large;
+}
+.button-save{
+    width:10%;
+}
+.write-space-vacancy{
+     width:95%;
+    display:flex ;
+    justify-content:space-between;
+    align-items:center;
+    height:700px;
+    margin: 0 auto;
+}
+.vacancy-request{
+    margin-bottom:350px;
+    margin-right:20px;
+}
+@media only screen and (max-width: 1280px) {
+    #contact-information {
+        margin-right:150px;
+    }
+    #space-write-email-phone-others{
+        width:26%;
+    }
+    .text-user{
+        width:80%;
+        height: 200px;
+    }
+    .portfolio-textarea{
+        width:80%;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+       .SaveChanges{
+           margin-left:160px!important;
+           margin-bottom:30px!important;
+       }
+        .ApplyNowVacant {
+            margin-left: 160px !important;
+            margin-bottom: 30px !important;
+        }
+    #space-user {
+        display: flex!important;
+        flex-direction: column-reverse!important; /* Apilar elementos en columna */
+        align-items: stretch!important;
+        min-height: auto !important;
+        height: auto !important;
+        gap:20px!important;
+
+    }
+    #space-user > * {
+        margin: 0 !important;
+        padding: 0!important;
+    }
+    .margin-zero {
+        margin-left: 50px!important;
+    }
+    #job-seeker-email{
+        margin-left:50px!important;
+    }
+    #job-seeker-phone-number{
+        margin-left:50px!important;
+    }
+    #job-seeker-other-contact-method{
+        margin-left:50px!important;
+    }
+    .space-write{
+        width:90%!important;
+    }
+    #contact-information{
+        margin-left:50px!important;
+    }
+    .write-space-vacancy {
+        display: flex;
+        flex-direction: column; /* Poner en columna */
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .vacancy-request {
+        order: -1; /* Mueve vacancy-request arriba */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text-user-vacancy{
+        height:300px;
+    }
+
+
+
 }
