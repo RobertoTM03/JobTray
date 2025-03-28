@@ -234,7 +234,19 @@
     border-radius: 5px;
 }
 
-.mobile-btn-container .company-buttons {
+.mobile-btn-container-job-seeker {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.company-buttons-mobile {
     display: block;
     width: 100%;
     text-align: left;
