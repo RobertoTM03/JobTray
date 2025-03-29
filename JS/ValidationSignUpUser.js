@@ -42,8 +42,6 @@ function validateUser(event) {
     let validEmail = emailField.validity.valid;
     let validPhone = phoneField.validity.valid;
     let validPassword = passwordField.validity.valid;
-    let validPasswordConfirm = passwordConfirm.validity.valid;
-
 
         // Verificar si las contraseñas coinciden
         let passwordsMatch = passwordField.value === passwordConfirm.value;

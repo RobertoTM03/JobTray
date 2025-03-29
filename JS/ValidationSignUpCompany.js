@@ -42,8 +42,6 @@ function validateCompany(event) {
     let validEmail = emailField.validity.valid;
     let validCifNif = cifNifField.validity.valid;
     let validPassword = passwordField.validity.valid;
-    let validPasswordConfirm = passwordConfirm.validity.valid;
-
 
         // Verificar si las contraseñas coinciden
         let passwordsMatch = passwordField.value === passwordConfirm.value;

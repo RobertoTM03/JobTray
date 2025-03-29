@@ -145,11 +145,6 @@
     z-index: 900;
 }
 
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
 /* Mobile */
 @media (max-width: 1000px) {
     .filter-aside {
@@ -165,10 +160,6 @@
         border-radius: 10px;
         overflow-y: auto;
         transition: transform 0.3s ease-in-out;
-    }
-
-    .filter-aside.active {
-        transform: translate(-50%, -50%) scale(1);
     }
 
     .filters-toggle {

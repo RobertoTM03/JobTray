@@ -1,31 +1,31 @@
-function redirectToJobSeekerSignIn(event, element) {
+function redirectToJobSeekerSignIn(event) {
     event.preventDefault(); // Evita la navegación predeterminada
     window.location.href = "sign-in-job-seeker.html";
 }
 
-function redirectToJobSeekerSignUp(event, element) {
+function redirectToJobSeekerSignUp(event) {
     event.preventDefault();
     window.location.href = "sign-up-job-seeker.html";
 }
 
-function redirectToMainPage(event, element) {
+function redirectToMainPage(event) {
     event.preventDefault();
     window.location.href = "index.html";
 }
 
-function redirectToCompanySignIn(event, element) {
+function redirectToCompanySignIn(event) {
     event.preventDefault();
     window.location.href = "sign-in-company.html";
 }
 
-function redirectToCompanySignUp(event, element) {
+function redirectToCompanySignUp(event) {
     event.preventDefault();
     window.location.href = "sign-up-company.html";
 }
 
 //Job seeker views
 
-function redirectToFindJobsJobSeeker(event, element) {
+function redirectToFindJobsJobSeeker(event) {
     event.preventDefault();
     window.location.href = "find-jobs-job-seeker.html";
 }
@@ -42,12 +42,12 @@ function redirectToJobSeekerProfileJobSeeker(event, element, jobseekerId) {
 
 // Company views
 
-function redirectToJobListingCompany(event, element) {
+function redirectToJobListingCompany(event) {
     event.preventDefault();
     window.location.href = "job-listing-company.html";
 }
 
-function redirectToVacancyPostCompany(event, element) {
+function redirectToVacancyPostCompany(event) {
     event.preventDefault();
     window.location.href = "vacancy-post-company.html";
 }

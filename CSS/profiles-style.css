@@ -1,15 +1,9 @@
-.name-page {
-    color: #25324B;
-    border-style: none;
-}
-
 .user-dashboard {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     border: 1px solid #aaabaf;
-
 }
 
 .user-image-dashboard {
@@ -17,11 +11,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    margin-left:30px;
-}
-
-#about-me {
-    margin-right:120px;
 }
 
 .user-image {
@@ -39,37 +28,25 @@
     width: 60px;
     height: 60px;
     background-color: black;
-    margin: 40px 20px 40px 40px;
+    margin: 0 20px 0 40px;
     border: 1px solid #aaabaf;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
 
 }
 
-.user-image-vacant {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 1px solid #aaabaf;
-}
-
-.contact-method {
-    border: 1px solid #aaabaf;
-}
 
 .text-user {
     overflow: hidden;
     resize: none;
     width:95%;
-    height:600px;
+    min-height:300px;
     background-color: #f5f5f5;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
-    margin:0px 0px 0px 50px;
+    margin:0 0 0 50px;
 }
+
 .text-user-vacancy {
     overflow: hidden;
     resize: none;
@@ -78,15 +55,7 @@
     background-color: #f5f5f5;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
-    margin:0px;
-}
-
-
-.job-seeker-profile-button {
-    text-align: left;
-    background-color: #1d4f9a;
-    border: 1px solid #aaabaf;
-    color: gray;
+    margin:0;
 }
 
 .ApplyNowVacant {
@@ -100,6 +69,7 @@
     text-align: right;
 }
 
+.ApplyNowVacant,
 .SaveChanges {
     background-color: white;
     color: #1d4f9a;
@@ -111,34 +81,14 @@
     text-align: right;
 }
 
-.dashboard-profile {
-    display: flex block;
-    justify-content: center;
-}
-
-.edit-zone {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-
-
-.text-center {
-    text-align: center;
-}
-
 .margin-zero {
     margin: 0;
 }
 
 .portfolio-textarea {
-
-    margin:0px 0px 0px 50px;
+    margin:0 0 0 50px;
     resize: none;
     width:95%;
-    box-sizing: border-box;
     background-color: #f5f5f5;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
@@ -169,11 +119,8 @@
     margin-bottom: 5px;
 }
 
-.salary-text {
-    font-weight: bold;
-}
-
 .salary-unit {
+    width: 20px;
     font-size: 14px;
     color: gray;
 }
@@ -194,7 +141,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #25324B;
-    min-width: 180px;
+    min-width: 130px;
 }
 
 .vacancy-input {
@@ -213,11 +160,6 @@
     gap: 5px;
 }
 
-.salary-text {
-    font-weight: bold;
-    color: #25324B;
-}
-
 .salary-unit {
     font-size: 14px;
     color: gray;
@@ -232,145 +174,268 @@
     padding: 5px;
     background-color: #f5f5f5;
 }
-#titles{
-    display: flex!important;
-    justify-content: space-between!important;
-    align-items: center!important;
-    width: 100%!important;
 
-}
-#about-me{
-    margin-left:50px!important;
-}
 #contact-information {
-    margin-right:140px!important;
+    margin-left: 30px;
 }
+
+#contact-information input {
+    width: 100%;
+}
+
 #space-user{
-    display:flex!important;
-    justify-content:space-between!important;
-    height:750px!important;
+    display:flex;
+    min-height:60vh;
 }
+
 .space-write{
-    width:75%!important;
+    width:75%;
 }
-#portfolio{
-    margin:0px 0px 0px 50px!important;
-}
-#space-write-email-phone-others{
-    width:17%;
-}
+
 .father-vacancy{
     display:flex;
     flex-direction:column;
 }
+
 .dashboard-vacancy-new{
      width:95%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     height:80px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     border: 1px solid #aaabaf;
 }
+
 .item-vacancy{
-    width:20%;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
+
 .font-vacancy{
     font-size:xx-large;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 .button-save{
     width:10%;
 }
+
 .write-space-vacancy{
      width:95%;
     display:flex ;
     justify-content:space-between;
-    align-items:center;
     height:700px;
     margin: 0 auto;
 }
+
 .vacancy-request{
     margin-bottom:350px;
     margin-right:20px;
 }
+
+.ApplyNowVacant,
+.SaveChanges {
+    min-width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1d4f9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-save {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+#mobileApplyNow,
+#mobileSaveChanges {
+    display: none;
+    margin: 30px auto 30px auto;
+}
+
+
+.space-write h3 {
+    margin-left: 50px;
+}
+
+.space-write textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 1280px) {
-    #contact-information {
-        margin-right:150px;
-    }
-    #space-write-email-phone-others{
-        width:26%;
-    }
     .text-user{
         width:80%;
-        height: 200px;
     }
+
     .portfolio-textarea{
         width:80%;
+    }
 
+    #contact-information {
+        margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 800px) {
-       .SaveChanges{
-           margin-left:160px!important;
-           margin-bottom:30px!important;
-       }
-        .ApplyNowVacant {
-            margin-left: 160px !important;
-            margin-bottom: 30px !important;
-        }
-    #space-user {
-        display: flex!important;
-        flex-direction: column-reverse!important; /* Apilar elementos en columna */
-        align-items: stretch!important;
-        min-height: auto !important;
-        height: auto !important;
-        gap:20px!important;
+    #mobileApplyNow,
+    #mobileSaveChanges {
+        display: block;
+    }
 
+    #desktopApplyNow,
+    #desktopSaveChanges {
+        display: none;
     }
-    #space-user > * {
-        margin: 0 !important;
-        padding: 0!important;
+
+   .SaveChanges{
+   }
+
+    .ApplyNowVacant {
+        margin-left: 160px ;
+        margin-bottom: 30px ;
     }
-    .margin-zero {
-        margin-left: 50px!important;
+
+    #space-user {
+        display: flex;
+        flex-direction: column-reverse; /* Apilar elementos en columna */
+        align-items: stretch;
+        min-height: auto ;
+        height: auto ;
+        gap:20px;
     }
-    #job-seeker-email{
-        margin-left:50px!important;
+
+    .contact-information input {
     }
-    #job-seeker-phone-number{
-        margin-left:50px!important;
-    }
-    #job-seeker-other-contact-method{
-        margin-left:50px!important;
-    }
+
     .space-write{
-        width:90%!important;
+        width:90%;
     }
-    #contact-information{
-        margin-left:50px!important;
-    }
+
     .write-space-vacancy {
         display: flex;
-        flex-direction: column; /* Poner en columna */
-        align-items: center;
-        width: 95%;
-        margin: 0 auto;
+        flex-direction: column;
+        width: calc(100vw - 80px);
+        margin: 0 0 0 30px;
     }
 
+    .space-write textarea {
+        padding: 10px;
+        width: calc(100vw - 80px);
+    }
+
+
     .vacancy-request {
-        order: -1; /* Mueve vacancy-request arriba */
-        width: 100%;
-        margin-bottom: 20px;
+        order: -1;
+        width: calc(100vw - 80px);
+        margin: 0;
     }
 
     .text-user-vacancy{
         height:300px;
     }
 
+    .space-write h3,
+    #contact-information {
+        margin-left: 30px;
+    }
 
+
+    .text-user,
+    .portfolio-textarea{
+        margin-left: 30px;
+        width: calc(100vw - 80px);
+        padding: 10px;
+    }
+
+    .space-write h3,
+    #contact-information input {
+        width: calc(100vw - 80px);
+    }
+
+    .vacancy-label {
+        min-width: 0;
+    }
+
+    .vacancy-field {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .vacancy-label {
+        flex: 1;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    .vacancy-input {
+        flex: 1;
+        text-align: right;
+        padding: 8px;
+        max-width: 200px;
+        width: 100px;
+    }
+
+    /* Salario específico */
+    .salary-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .salary-input {
+        width: 60px;
+        text-align: right;
+    }
+
+    .salary-unit {
+        white-space: nowrap;
+    }
+
+    .user-image-dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centrado vertical */
+        align-items: center;     /* Centrado horizontal */
+        gap: 10px;
+        width: 100%;
+        height: 100%; /* o puedes usar un valor fijo si prefieres */
+        padding: 20px 0;
+    }
 
 }
+
+.font-vacancy {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número máximo de líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 2rem; /* Escritorio */
+}
+
+@media (max-width: 768px) {
+    .font-vacancy {
+        font-size: 4.5vw;
+        -webkit-line-clamp: 2; /* Mantiene 2 líneas en móvil */
+    }
+}
+

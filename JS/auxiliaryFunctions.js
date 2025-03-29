@@ -463,11 +463,53 @@ async function loadCompanyProfileHeader(companyId) {
     document.getElementById("company-header-email").innerText = company.email;
 }
 
+function HeaderPopupMenu() {
+    const mobileBtn = document.querySelector('.mobile-btn');
+    const mobileBtnContainer = document.querySelector('.mobile-btn-container');
+
+    if (!mobileBtn || !mobileBtnContainer) {
+        console.error('Algunos elementos no se encontraron en el DOM');
+        return;
+    }
+
+    mobileBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileBtnContainer.classList.toggle('active');
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', () => {
+        mobileBtnContainer.classList.remove('active');
+    });
+
+    // Evita que clics dentro del menú cierren el contenedor
+    mobileBtnContainer.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    // Cierra el menú si se cambia el tamaño de la pantalla y el botón ya no está visible
+    window.addEventListener('resize', () => {
+        const mobileBtn = document.querySelector('.mobile-btn');
+        const mobileBtnContainer = document.querySelector('.mobile-btn-container');
+
+        if (mobileBtn && mobileBtnContainer) {
+            const isVisible = window.getComputedStyle(mobileBtn).display !== 'none';
+
+            if (!isVisible) {
+                mobileBtnContainer.classList.remove('active');
+            }
+        }
+    });
+}
+
 // ---------- Nav content load ----------
 
 async function loadVacancyToggleNav(vacancyId) {
     const editLink = document.querySelector("#redirect-to-vacancy-edit a");
     const listLink = document.querySelector("#redirect-to-vacancy-list a");
+
+    console.log(editLink)
+    console.log(listLink)
 
     if (editLink) {
         editLink.onclick = function(event) {
@@ -672,7 +714,6 @@ async function saveJobSeekerProfile(jobSeekerId) {
         const portfolioLink = document.getElementById("job-seeker-portfolio").value.trim();
         const email = document.getElementById("job-seeker-email").value.trim();
         const phoneNumber = document.getElementById("job-seeker-phone-number").value.trim();
-        const otherContactMethod = document.getElementById("job-seeker-other-contact-method").value.trim();
 
         const updatedData = {
             ...(fullName && { fullName }),

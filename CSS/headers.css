@@ -1,13 +1,4 @@
-#company-header{
-    display:flex;
-    border-style:none;
-    background-color: #1d4f9a;
-    width:100%;
-    justify-content: space-between;
-    margin:0;
-    flex-wrap:wrap;
-}
-
+#company-header,
 #job-seeker-header{
     display:flex;
     border-style:none;
@@ -35,29 +26,14 @@
     flex-wrap:wrap;
 }
 
-#imgCompany {
-    border-radius: 75%;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border:white;
-    object-fit: cover;
-}
-
+#imgCompany,
 #jobSeekerProfileImage {
     border-radius: 50%;
-    width: 20px;  /* Cambiado a 20px de ancho */
-    height: 20px; /* Ajustado para mantener proporción */
+    width: 20px;
+    height: 20px;
     background-color: white;
     border: white;
     object-fit: cover;
-}
-
-.company-buttons-container{
-    display: flex inline;
-    justify-content: space-around;
-    margin-top:20px;
-    gap:20px;
 }
 
 .company-buttons{
@@ -78,14 +54,15 @@
     margin-right:20px;
 }
 
+.company-buttons-container,
 .job-seeker-buttons-section{
     display: flex inline;
     justify-content: space-between;
-    align-items: flex-end;
     margin-top:20px;
-    gap:5px;
+    gap:15px;
 }
 
+.mobile-btn,
 .job-seeker-find-jobs-button {
     color: #1d4f9a;
     background-color: white;
@@ -153,52 +130,17 @@
     margin-left: 20px;
 }
 
-.buttons-section-header {
-    display: flex inline;
-    gap:5px;
-}
-
 .color-name{
     color:white;
 }
 
+.buttons-section-header,
 .section-button-job-seeker-button{
     display: flex inline;
     gap:1px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
-.popup-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #4a4a4a;
-    border-radius: 5px;
-    width: 200px;
-    min-height: auto;
-    padding: 10px;
-    display: none;
-    flex-direction: column;
-    z-index: 1000;
-    gap: 5px;
-}
-
-.popup-btn {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: white;
-    text-align: center;
-    cursor: pointer;
-    font-size: 14px;
-    color: #333;
-    border-radius: 5px;
-    transition: background 0.3s ease, border-color 0.3s ease;
-}
-
-
 
 .popup-btn:hover {
     background: #f1f1f1;
@@ -210,51 +152,28 @@
     font-weight: bold;
 }
 
-
-.mobile-btn{
+.mobile-btn {
+    position: relative;
     background-color: #ffffff;
     border: none;
     padding: 10px;
     height: 40px;
-    width: 60px;
+    width: 40px;
     cursor: pointer;
     border-radius: 4px;
     display: none;
     font: bold 20px/0.5 "Roboto", sans-serif;
-}
-.mobile-btn-container {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 5px;
+    z-index: 10;
 }
 
-.mobile-btn-container-job-seeker {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.company-buttons-mobile {
+.mobile-btn-container.active {
     display: block;
-    width: 100%;
-    text-align: left;
-    background-color: #333;
-    margin: 5px 0;
 }
 
-
+.mobile-btn-wrapper {
+    position: relative;
+    display: inline-block;
+}
 
 .section-button-job-seeker-button,
 .buttons-section-header {
@@ -268,11 +187,74 @@
 }
 
 .job-seeker-find-jobs-button-section{
-    padding-right: 15px;
+    padding-right: 1%;
 }
 
 .user-dashboard h1{
     font-size: 20px;
+}
+
+.mobile-btn-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+    padding: 10px;
+    border-radius: 9px;
+    z-index: 99;
+    width: 30vw;
+}
+
+.mobile-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1d4f9a;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.popup-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    width: 200px;
+    padding: 11px;
+    flex-direction: column;
+    z-index: 1000;
+    gap: 8px;
+    animation: fadeInPopup 0.3s ease-in-out;
+}
+
+.popup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #1d4f9a;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.popup-btn.logout {
+    background-color: #e74c3c;
 }
 
 @media screen and (max-width: 600px) {
@@ -290,8 +272,6 @@
 
     .job-seeker-find-jobs-button-section{
         display: block;
-        width: 100%;
         text-align: left;
-        margin: 1px 0 20px;
     }
 }

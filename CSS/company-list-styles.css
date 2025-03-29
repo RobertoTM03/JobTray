@@ -38,16 +38,6 @@
     font-weight: bold;
 }
 
-.sort-icon {
-    display: inline-block;
-    font-size: 12px;
-    border: none;
-    padding: 0 6px;
-    background: none;
-    transform: rotate(90deg);
-    font-weight: bold;
-}
-
 .list-container td img {
     width: 30px;
     height: 30px;
@@ -63,11 +53,6 @@
     border-radius: 20px;
     font-size: 12px;
     background: transparent;
-}
-
-#stage {
-    color: #56CDAD;
-    border: 2px solid #56CDAD;
 }
 
 #job-type {
@@ -95,12 +80,6 @@
     padding: 6px 12px;
     font-size: 14px;
     cursor: pointer;
-}
-
-.sort-icon {
-    font-size: 12px;
-    transform: rotate(90deg);
-    font-weight: bold;
 }
 
 .vacancy-list-row td:first-child,
@@ -185,6 +164,16 @@
 
     #job-listing-list th:nth-child(5),
     #job-listing-list td:nth-child(5) {
+        display: none;
+    }
+
+    #job-listing-list th:nth-child(6),
+    #job-listing-list td:nth-child(6) {
+        display: none;
+    }
+
+    #applicants-list th:nth-child(3),
+    #applicants-list td:nth-child(3) {
         display: none;
     }
 

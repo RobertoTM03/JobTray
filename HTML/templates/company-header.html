@@ -6,24 +6,30 @@
     </section>
     <section class="display-section">
         <section class="company-buttons-container">
+            <!-- Botones visibles en escritorio -->
             <button class="company-buttons" onclick="redirectToJobListingCompany(event, this)">Job Listing</button>
             <button class="company-buttons" onclick="redirectToVacancyPostCompany(event, this)">Post a job</button>
 
-            <button class="mobile-btn" >☰</button>
-            <div class="mobile-btn-container">
-                <button class="company-buttons-mobile" onclick="redirectToJobListingCompany(event, this)">Job Listing</button>
-                <button class="company-buttons-mobile" onclick="redirectToVacancyPostCompany(event, this)">Post a job</button>
+            <div class="mobile-btn-wrapper">
+                <button class="mobile-btn">☰</button>
+
+                <div class="mobile-btn-container">
+                    <button class="mobile-button" onclick="redirectToJobListingCompany(event, this)">Job Listing</button>
+                    <button class="mobile-button" onclick="redirectToVacancyPostCompany(event, this)">Post a job</button>
+                </div>
             </div>
 
+
+            <!-- Perfil de usuario -->
             <section class="buttons-section-header">
                 <img src="/images/asps.png" id="company-header-profile-image" alt="Company Profile">
 
-                <button class="company-buttons-profile">
+                <button class="company-buttons-profile" id="company-profile-button">
                     <b class="color-name" id="company-header-name">Company Name</b><br>
                     <span id="company-header-email">company@example.com</span>
                 </button>
 
-                <div class="popup-menu">
+                <div class="popup-menu" id="popup-menu">
                     <button class="popup-btn logout" onclick="redirectToMainPage(event, this)">Log out</button>
                 </div>
             </section>

@@ -46,6 +46,7 @@ function loadViewFindJobsJobSeeker() {
     loadTemplate('/HTML/templates/job-seeker-header.html', 'job_seeker_header', () => {
         loadHeaderLogo();
         loadJobSeekerProfileHeader(getCurrentJobSeekerId());
+        HeaderPopupMenu();
     });
 
     loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
@@ -65,10 +66,11 @@ function loadViewJobSeekerProfileJobSeeker() {
     loadTemplate('/HTML/templates/job-seeker-header.html', 'job_seeker_header', () => {
         loadHeaderLogo();
         loadJobSeekerProfileHeader(getCurrentJobSeekerId());
+        HeaderPopupMenu();
     });
 
     loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
-        setMainTittle("Profile");
+        setMainTittle("My Profile");
     });
 
     loadTemplate('/HTML/templates/job-seeker-profile-edit.html', 'job-seeker-profile-content', () => {
@@ -82,6 +84,7 @@ function loadViewVacancyViewJobSeeker() {
     loadTemplate('/HTML/templates/job-seeker-header.html', 'job_seeker_header', () => {
         loadHeaderLogo();
         loadJobSeekerProfileHeader(getCurrentJobSeekerId());
+        HeaderPopupMenu();
     });
 
     loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
@@ -105,6 +108,7 @@ function loadViewJobSeekerProfileCompany() {
     loadTemplate('/HTML/templates/company-header.html', 'company_header', () => {
         loadHeaderLogo();
         loadCompanyProfileHeader(getCurrentCompanyId());
+        HeaderPopupMenu();
     });
 
     loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
@@ -122,6 +126,7 @@ function loadViewVacancyEditCompany() {
     loadTemplate('/HTML/templates/company-header.html', 'company_header', () => {
         loadHeaderLogo();
         loadCompanyProfileHeader(getCurrentCompanyId());
+        HeaderPopupMenu();
     });
 
     loadTemplate('/HTML/templates/main-subtitle.html', 'main-subtitle', () => {
@@ -143,6 +148,7 @@ function loadViewVacancyPostCompany() {
     loadTemplate('/HTML/templates/company-header.html', 'company_header', () => {
         loadHeaderLogo();
         loadCompanyProfileHeader(getCurrentCompanyId());
+        HeaderPopupMenu();
     });
     loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
         setMainTittle("Post a Job");
@@ -157,6 +163,7 @@ function loadViewVacancyApplicantsListCompany() {
     loadTemplate('/HTML/templates/company-header.html', 'company_header', () => {
         loadHeaderLogo();
         loadCompanyProfileHeader(getCurrentCompanyId());
+        HeaderPopupMenu();
     });
     loadTemplate('/HTML/templates/main-subtitle.html', 'main-subtitle', () => {
         setMainSubtitle("Job Listing")
@@ -177,6 +184,7 @@ function loadViewJobListingCompany() {
     loadTemplate('/HTML/templates/company-header.html', 'company_header', () => {
         loadHeaderLogo();
         loadCompanyProfileHeader(getCurrentCompanyId());
+        HeaderPopupMenu();
     });
 
     loadTemplate('/HTML/templates/main-tittle.html', 'main-tittle', () => {
