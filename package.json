@@ -1,0 +1,24 @@
+{
+  "name": "jobtray",
+  "version": "1.0.0",
+  "description": "---------------------------------------------------------------------------------------------------------------------------",
+  "homepage": "https://github.com/RobertoTM03/JobTray#readme",
+  "bugs": {
+    "url": "https://github.com/RobertoTM03/JobTray/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertoTM03/JobTray.git"
+  },
+  "license": "ISC",
+  "author": "Grupo 7",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch JSON/db.json --port 3000"
+  },
+  "keywords": [],
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

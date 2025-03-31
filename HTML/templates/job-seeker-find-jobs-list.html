@@ -1,42 +1,42 @@
 <section class="list-container">
+    <!-- Botón Filters que aparece en mobile/tablet -->
+    <button class="filters-toggle">Filters</button>
+
+    <!-- Fondo Oscuro -->
+    <div class="overlay"></div>
+
     <aside class="filter-aside">
         <fieldset>
             <legend>Salary Range</legend>
-            <label for="salary-1"><input type="checkbox" name="salary-range" id="salary-1" checked> $700 - $1000 (4)</label>
-            <label for="salary-2"><input type="checkbox" name="salary-range" id="salary-2" checked> $1000 - $1500 (6)</label>
-            <label for="salary-3"><input type="checkbox" name="salary-range" id="salary-3" checked> $1500 - $2000 (10)</label>
-            <label for="salary-4"><input type="checkbox" name="salary-range" id="salary-4" checked> $3000 or above (4)</label>
+            <label><input type="checkbox" checked> $700 - $1000 (4)</label>
+            <label><input type="checkbox" checked> $1000 - $1500 (6)</label>
+            <label><input type="checkbox" checked> $1500 - $2000 (10)</label>
+            <label><input type="checkbox" checked> $3000 or above (4)</label>
         </fieldset>
 
         <fieldset>
             <legend>Sector</legend>
-            <label for="sector-1"><input type="checkbox" name="sector" id="sector-1" checked> Primary</label>
-            <label for="sector-2"><input type="checkbox" name="sector" id="sector-2" checked> Secondary</label>
-            <label for="sector-3"><input type="checkbox" name="sector" id="sector-3" checked> Third</label>
+            <label><input type="checkbox" checked> Primary</label>
+            <label><input type="checkbox" checked> Secondary</label>
+            <label><input type="checkbox" checked> Third</label>
         </fieldset>
 
         <fieldset>
             <legend>Education</legend>
-            <label for="education-1"><input type="checkbox" name="education" id="education-1" checked> Elementary School</label>
-            <label for="education-2"><input type="checkbox" name="education" id="education-2" checked> Middle School</label>
-            <label for="education-3"><input type="checkbox" name="education" id="education-3" checked> High School</label>
-            <label for="education-4"><input type="checkbox" name="education" id="education-4" checked> University</label>
-            <label for="education-4"><input type="checkbox" name="education" id="education-5" checked> Master</label>
+            <label><input type="checkbox" checked> Elementary School</label>
+            <label><input type="checkbox" checked> Middle School</label>
+            <label><input type="checkbox" checked> High School</label>
+            <label><input type="checkbox" checked> University</label>
+            <label><input type="checkbox" checked> Master</label>
         </fieldset>
-    </aside>
 
+        <div class="apply-filters-button">
+            <button id="apply-filters">Apply Filters</button>
+        </div>
+    </aside>
 
     <section class="job-list">
         <h2>All Jobs</h2>
-
-        <div class="job-card" onclick="redirectToVacancyViewJobSeeker(event, this)">
-            <div class="logo"><img src="../../images/asps.png" alt="Placeholder X"></div>
-            <div class="job-info">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-
         <div class="see-more-button">
             <button id="see-more">See more...</button>
         </div>

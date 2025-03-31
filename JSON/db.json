@@ -1,0 +1,277 @@
+{
+  "jobSeekers": [
+    {
+      "id": "1",
+      "fullName": "Roberto Tejero Martín",
+      "email": "roberto@email.com",
+      "phoneNumber": "+34 123 456 799",
+      "otherContactMethod": "Empty",
+      "userProfileDescription": "Empty",
+      "portfolioLink": "Empty",
+      "image": "/images/jobSeekers/jobSeeker-default.jpg"
+    },
+    {
+      "id": "2",
+      "fullName": "Andrea Santana López",
+      "email": "andrea@email.com",
+      "phoneNumber": "+34 123 456 789",
+      "otherContactMethod": "Empty",
+      "userProfileDescription": "Empty",
+      "portfolioLink": "Empty",
+      "image": "/images/jobSeekers/jobSeeker-default.jpg"
+    },
+    {
+      "id": "3",
+      "fullName": "Sean Owens Cruz",
+      "email": "sean@email.com",
+      "phoneNumber": "+34 123 456 789",
+      "otherContactMethod": "Empty",
+      "userProfileDescription": "Empty",
+      "portfolioLink": "Empty",
+      "image": "/images/jobSeekers/jobSeeker-default.jpg"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "cifNif": "A12345678",
+      "email": "apple@email.com",
+      "image": "/images/companies/company-default.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Samsung",
+      "cifNif": "A12345678",
+      "email": "samsung@email.com",
+      "image": "/images/companies/company-default.jpg"
+    }
+  ],
+  "vacancies": [
+    {
+      "id": "1",
+      "owner": 1,
+      "name": "Software Engineer",
+      "stage": "Open",
+      "postedDate": "2000-01-01",
+      "dueDate": "2000-12-31",
+      "jobType": "Full-Time",
+      "minimumSalary": 1300,
+      "maximumSalary": 13000,
+      "applicants": [
+        {
+          "id": 3,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        },
+        {
+          "id": 1,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        }
+      ],
+      "employmentSector": "Secondary",
+      "minimumEducationRequired": "University",
+      "description": "Lorem ipsum Sed arcu elit, finibus eget ipsum vitae, eleifend blandit justo. Nulla non ultrices urna. Etiam ut ex lacinia, vehicula urna eu, tincidunt nulla. Morbi quis vehicula massa, non ultrices tellus. Proin dignissim mollis mauris in tristique. Etiam a mauris a lorem euismod laoreet vel a augue. Proin ut laoreet nisi, vitae congue risus.",
+      "image": "/images/vacancies/vacancy-1.jpg"
+    },
+    {
+      "id": "2",
+      "owner": 2,
+      "name": "Marketing",
+      "stage": "Open",
+      "postedDate": "2000-01-01",
+      "dueDate": "2000-12-31",
+      "jobType": "Half-Time",
+      "minimumSalary": 1300,
+      "maximumSalary": 13000,
+      "applicants": [
+        {
+          "id": 2,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        },
+        {
+          "id": 3,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        }
+      ],
+      "employmentSector": "Third",
+      "minimumEducationRequired": "High School",
+      "description": "Lorem ipsum Sed arcu elit, finibus eget ipsum vitae, eleifend blandit justo. Nulla non ultrices urna. Etiam ut ex lacinia, vehicula urna eu, tincidunt nulla. Morbi quis vehicula massa, non ultrices tellus. Proin dignissim mollis mauris in tristique. Etiam a mauris a lorem euismod laoreet vel a augue. Proin ut laoreet nisi, vitae congue risus. ",
+      "image": "/images/vacancies/vacancy-2.png"
+    },
+    {
+      "id": "3",
+      "owner": 1,
+      "name": "Cleaner",
+      "stage": "Close",
+      "postedDate": "1999-01-01",
+      "dueDate": "1999-12-31",
+      "jobType": "Half-Time",
+      "minimumSalary": 1300,
+      "maximumSalary": 13000,
+      "applicants": [
+        {
+          "id": 2,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        },
+        {
+          "id": 3,
+          "stage": "new",
+          "applyDate": "2000-10-10"
+        }
+      ],
+      "employmentSector": "Third",
+      "minimumEducationRequired": "High School",
+      "description": "Lorem ipsum Sed arcu elit, finibus eget ipsum vitae, eleifend blandit justo. Nulla non ultrices urna. Etiam ut ex lacinia, vehicula urna eu, tincidunt nulla. Morbi quis vehicula massa, non ultrices tellus. Proin dignissim mollis mauris in tristique. Etiam a mauris a lorem euismod laoreet vel a augue. Proin ut laoreet nisi, vitae congue risus.",
+      "image": "/images/vacancies/vacancy-3.jpg"
+    },
+    {
+      "id": "9484",
+      "owner": 1,
+      "name": "1",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "part-time",
+      "minimumSalary": 1,
+      "maximumSalary": 11,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "1",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "2769",
+      "owner": 1,
+      "name": "2",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 2,
+      "maximumSalary": 22,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "2",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "22f2",
+      "owner": 1,
+      "name": "3",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 3,
+      "maximumSalary": 33,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "3",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "9b9b",
+      "owner": 1,
+      "name": "4",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 4,
+      "maximumSalary": 44,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "4",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "12a4",
+      "owner": 1,
+      "name": "5",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 5,
+      "maximumSalary": 55,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "5",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "b019",
+      "owner": 1,
+      "name": "6",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 6,
+      "maximumSalary": 66,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "6",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "69ba",
+      "owner": 1,
+      "name": "7",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 7,
+      "maximumSalary": 77,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "7",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "c2a4",
+      "owner": 1,
+      "name": "8",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 8,
+      "maximumSalary": 88,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "8",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    },
+    {
+      "id": "5ff8",
+      "owner": 1,
+      "name": "9",
+      "stage": "Open",
+      "postedDate": "2025-03-25",
+      "dueDate": "2025-06-25",
+      "jobType": "full-time",
+      "minimumSalary": 9,
+      "maximumSalary": 99,
+      "applicants": [],
+      "employmentSector": "primary",
+      "minimumEducationRequired": "primary",
+      "description": "9",
+      "image": "/images/vacancies/vacancy_default.jpg"
+    }
+  ]
+}

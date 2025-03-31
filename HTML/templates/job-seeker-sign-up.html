@@ -10,7 +10,7 @@
         </div>
 
         <section class="sign-entry-form">
-            <form>
+            <form id="signup-user">
                 <label for="name">Full name</label>
                 <input type="text" id="name" placeholder="Enter your full name" required>
 
@@ -18,15 +18,19 @@
                 <input type="email" id="email" placeholder="Enter email address" required>
 
                 <label for="phone-number">Phone number</label>
-                <input type="text" id="phone-number" placeholder="Enter phone number" required>
+                <input type="tel" id="phone-number" placeholder="Enter phone number"
+                       pattern="^\+?[0-9]{9,15}$"
+                       title="Enter a valid phone number (9-15 digits, with optional + at the beginning)"
+                       required>
+
 
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password" required>
+                <input type="password" id="password" placeholder="Enter password" required minlength="8">
 
                 <label for="password-confirm">Confirm Password</label>
                 <input type="password" id="password-confirm" placeholder="Repeat the password" required>
 
-                <button type="submit" class="submit-button" onclick="redirectToFindJobsJobSeeker(event, this)">Sign up</button>
+                <button type="submit" class="submit-button">Sign up</button>
             </form>
         </section>
 

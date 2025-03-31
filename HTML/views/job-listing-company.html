@@ -6,30 +6,34 @@
         <meta name="keywords" content="HTML5, CSS3, JavaScript">
 
         <title>JobTray</title>
-        <script src="/JS/xlu-include-file.js"></script>
+        <script src="/JS/redirectFunctions.js"></script>
+        <script src="/JS/auxiliaryFunctions.js"></script>
+        <script src="/JS/viewComposition.js"></script>
 
         <link rel="stylesheet" href="/CSS/general-style.css">
         <link rel="stylesheet" href="/CSS/headers.css">
         <link rel="stylesheet" href="/CSS/search-bar-style.css">
         <link rel="stylesheet" href="/CSS/company-list-styles.css">
         <link rel="stylesheet" href="/CSS/footer-style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="wrapper">
-            <header id="sign_header" xlu-include-file="/HTML/templates/company-header.html">
+            <header id="company_header">
             </header>
 
-            <section id="main-tittle" xlu-include-file="/HTML/templates/main-tittle.html">
+            <section id="main-tittle">
             </section>
 
-            <main id="job-listing-content" xlu-include-file="/HTML/templates/company-job-listing-list.html">
+            <main id="job-listing-content">
             </main>
 
-            <footer id="footer" xlu-include-file="/HTML/templates/footer.html">
+            <footer id="footer">
             </footer>
         </div>
         <script>
-            xLuIncludeFile();
+            loadViewJobListingCompany();
         </script>
     </body>
 </html>

@@ -7,7 +7,7 @@
                 <p class="info-text">Job titles must describe one position</p>
             </div>
             <div class="input-container">
-                <input type="text" id="job-title" name="job-title" placeholder="Lore Ipsum">
+                <input type="text" id="job-title" name="job-title" placeholder="You write a job title" required>
             </div>
         </section>
 
@@ -20,9 +20,9 @@
                 <div class="checkbox-group">
                     <label><input type="radio" name="employment_type" value="full-time"> Full-Time</label>
                     <label><input type="radio" name="employment_type" value="part-time"> Part-Time</label>
-                    <label><input type="checkbox" name="employment_type" value="remote"> Remote</label>
-                    <label><input type="checkbox" name="employment_type" value="internship"> Internship</label>
-                    <label><input type="checkbox" name="employment_type" value="contract"> Contract</label>
+                    <label><input type="radio" name="employment_type" value="remote"> Remote</label>
+                    <label><input type="radio" name="employment_type" value="internship"> Internship</label>
+                    <label><input type="radio" name="employment_type" value="contract"> Contract</label>
                 </div>
             </div>
         </section>
@@ -59,8 +59,8 @@
 
         <section class="form-group-section">
             <div class="label-container">
-                <label>Employment Sector</label>
-                <p class="info-text">You can select one employment sector</p>
+                <label>Minimum education required</label>
+                <p class="info-text">Select the minimum employment required</p>
             </div>
             <div class="input-container">
                 <div class="radio-group">
@@ -75,7 +75,7 @@
 
         <section class="form-group-section">
             <div class="label-container">
-                <label for="education-description">Minimum education required</label>
+                <label for="education-description">Job Description</label>
                 <p class="info-text">Describe the job vacancy</p>
             </div>
             <div class="input-container">
@@ -83,6 +83,6 @@
             </div>
         </section>
 
-        <button type="submit" class="vacancy-submit-btn" onclick="redirectToJobListingCompany(event, this)">Submit offer</button>
+        <button type="submit" class="vacancy-submit-btn">Submit offer</button>
     </form>
 </main>

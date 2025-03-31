@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Employment web site">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Employment web site">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript">
 
-    <title>JobTray</title>
-    <script src="/JS/xlu-include-file.js"></script>
+        <title>JobTray</title>
+        <script src="/JS/redirectFunctions.js"></script>
+        <script src="/JS/auxiliaryFunctions.js"></script>
+        <script src="/JS/viewComposition.js"></script>
 
-    <link rel="stylesheet" href="/CSS/general-style.css">
-    <link rel="stylesheet" href="/CSS/headers.css">
-    <link rel="stylesheet" href="/CSS/vacancy-toggle-nav-style.css">
-    <link rel="stylesheet" href="/CSS/company-list-styles.css">
-    <link rel="stylesheet" href="/CSS/footer-style.css">
+        <link rel="stylesheet" href="/CSS/general-style.css">
+        <link rel="stylesheet" href="/CSS/headers.css">
+        <link rel="stylesheet" href="/CSS/vacancy-toggle-nav-style.css">
+        <link rel="stylesheet" href="/CSS/company-list-styles.css">
+        <link rel="stylesheet" href="/CSS/footer-style.css">
 
-</head>
-<body>
-    <div id="wrapper">
-        <header id="sign_header" xlu-include-file="/HTML/templates/company-header.html">
-        </header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="company_header">
+            </header>
 
-        <section id="main-subtitle" xlu-include-file="/HTML/templates/main-subtitle.html">
-        </section>
+            <section id="main-subtitle">
+            </section>
 
-        <nav id="vacancy-toggle-nav" xlu-include-file="/HTML/templates/company-vacancy-toggle-nav.html">
-        </nav>
+            <nav id="vacancy-toggle-nav">
+            </nav>
 
-        <main id="job-listing-content" xlu-include-file="/HTML/templates/company-vacancy-list.html">
-        </main>
+            <main id="vacancy-list-content">
+            </main>
 
-        <footer id="footer" xlu-include-file="/HTML/templates/footer.html">
-        </footer>
-    </div>
-    <script>
-        xLuIncludeFile();
-    </script>
-</body>
+            <footer id="footer">
+            </footer>
+        </div>
+        <script>
+            loadViewVacancyApplicantsListCompany();
+        </script>
+    </body>
 </html>
